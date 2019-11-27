@@ -7,6 +7,6 @@
 #include <stdio.h>
 #include "grafo.h"
 
-Grafo *preencherGrafo(FILE *arquivo);
+Grafo *preencherGrafo(FILE *arquivoDistancias, FILE *arquivoFluxos);
 
 #endif //TPA_DIJKSTRA_ARQUIVO_H

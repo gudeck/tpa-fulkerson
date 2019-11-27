@@ -4,6 +4,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "headers/arquivo.h"
+#include "headers/grafo.h"
 
 void verificaArquivo(FILE *arquivo) {
     if (!arquivo) {
@@ -34,17 +35,33 @@ Grafo *___preencherDistancias(FILE *arquivo) {
     Grafo *novoGrafo = criaGrafo();
     for (int i = 0; fgets(linha, 999, arquivo); i++) {
         strtok(linha, ";");
-        origem = grafoBairros->arestas->registros[i]->origem;
+        origem = grafoBairros->arestas[i]->origem;
         for (int j = 0; (distancia = strtok(NULL, ";")); j++) {
             if (strcmp(distancia, "0") == 0 || strcmp(distancia, "0\n") == 0) continue;
-            destino = grafoBairros->arestas->registros[j]->destino;
+            destino = grafoBairros->arestas[j]->destino;
             inserirGrafo(novoGrafo, criaAresta(origem, destino, distancia, "0"));
         }
     }
     return novoGrafo;
 }
 
-Grafo *preencherGrafo(FILE *arquivo) {
-    verificaArquivo(arquivo);
-    return ___preencherVertices(arquivo);
+Grafo *___preencherFluxos(FILE *arquivoDistancias, FILE *arquivoFluxos) {
+    char linha[999];
+    char *fluxo;
+    Grafo *grafoDistancias = ___preencherDistancias(arquivoDistancias);
+    fgets(linha, 999, arquivoFluxos);
+    for (int i = 0, indice = 0; fgets(linha, 999, arquivoFluxos); i++) {
+        strtok(linha, ";");
+        for (int j = 0; (fluxo = strtok(NULL, ";")); j++) {
+            if (strcmp(fluxo, "0") == 0 || strcmp(fluxo, "0\n") == 0) continue;
+            grafoDistancias->arestas[indice++]->fluxoDisponivel = strtod(fluxo, NULL);
+        }
+    }
+    return grafoDistancias;
+}
+
+Grafo *preencherGrafo(FILE *arquivoDistancias, FILE *arquivoFluxos) {
+    verificaArquivo(arquivoDistancias);
+    verificaArquivo(arquivoFluxos);
+    return ___preencherFluxos(arquivoDistancias, arquivoFluxos);
 }

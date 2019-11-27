@@ -6,11 +6,9 @@ set(CMAKE_C_STANDARD 11)
 add_executable(tpa_fulkerson
         src/headers/aresta.h
         src/headers/arquivo.h
-        src/headers/grafo.h
         src/headers/main.h
-        src/headers/vetor.h
+        src/headers/grafo.h
         src/aresta.c
         src/arquivo.c
-        src/grafo.c
         src/main.c
-        src/vetor.c)
+        src/grafo.c)

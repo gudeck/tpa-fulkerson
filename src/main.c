@@ -6,8 +6,9 @@
 #include "headers/arquivo.h"
 
 int main() {
-    FILE *arquivo = fopen("../distancias.txt", "r");
-    Grafo *grafo = preencherGrafo(arquivo);
+    FILE *arquivoDistancias = fopen("../distancias.txt", "r");
+    FILE *arquivoFluxos = fopen("../fluxos.txt", "r");
+    Grafo *grafo = preencherGrafo(arquivoDistancias, arquivoFluxos);
 
     mostrarGrafo(grafo);
 

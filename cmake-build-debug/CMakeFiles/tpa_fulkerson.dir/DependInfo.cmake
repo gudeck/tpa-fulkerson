@@ -4,11 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "C:/Users/2017122760013/Desktop/tpa-fulkerson/src/aresta.c" "C:/Users/2017122760013/Desktop/tpa-fulkerson/cmake-build-debug/CMakeFiles/tpa_fulkerson.dir/src/aresta.c.obj"
-  "C:/Users/2017122760013/Desktop/tpa-fulkerson/src/arquivo.c" "C:/Users/2017122760013/Desktop/tpa-fulkerson/cmake-build-debug/CMakeFiles/tpa_fulkerson.dir/src/arquivo.c.obj"
-  "C:/Users/2017122760013/Desktop/tpa-fulkerson/src/grafo.c" "C:/Users/2017122760013/Desktop/tpa-fulkerson/cmake-build-debug/CMakeFiles/tpa_fulkerson.dir/src/grafo.c.obj"
-  "C:/Users/2017122760013/Desktop/tpa-fulkerson/src/main.c" "C:/Users/2017122760013/Desktop/tpa-fulkerson/cmake-build-debug/CMakeFiles/tpa_fulkerson.dir/src/main.c.obj"
-  "C:/Users/2017122760013/Desktop/tpa-fulkerson/src/vetor.c" "C:/Users/2017122760013/Desktop/tpa-fulkerson/cmake-build-debug/CMakeFiles/tpa_fulkerson.dir/src/vetor.c.obj"
+  "C:/Users/guzuc/CLionProjects/tpa-fulkerson/src/aresta.c" "C:/Users/guzuc/CLionProjects/tpa-fulkerson/cmake-build-debug/CMakeFiles/tpa_fulkerson.dir/src/aresta.c.obj"
+  "C:/Users/guzuc/CLionProjects/tpa-fulkerson/src/arquivo.c" "C:/Users/guzuc/CLionProjects/tpa-fulkerson/cmake-build-debug/CMakeFiles/tpa_fulkerson.dir/src/arquivo.c.obj"
+  "C:/Users/guzuc/CLionProjects/tpa-fulkerson/src/grafo.c" "C:/Users/guzuc/CLionProjects/tpa-fulkerson/cmake-build-debug/CMakeFiles/tpa_fulkerson.dir/src/grafo.c.obj"
+  "C:/Users/guzuc/CLionProjects/tpa-fulkerson/src/main.c" "C:/Users/guzuc/CLionProjects/tpa-fulkerson/cmake-build-debug/CMakeFiles/tpa_fulkerson.dir/src/main.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

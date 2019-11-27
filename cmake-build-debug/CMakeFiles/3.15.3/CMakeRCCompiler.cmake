@@ -1,4 +1,4 @@
-set(CMAKE_RC_COMPILER "C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/bin/windres.exe")
+set(CMAKE_RC_COMPILER "C:/Users/guzuc/Desktop/dev_c_cpp/MiniGW/bin/windres.exe")
 set(CMAKE_RC_COMPILER_ARG1 "")
 set(CMAKE_RC_COMPILER_LOADED 1)
 set(CMAKE_RC_SOURCE_FILE_EXTENSIONS rc;RC)

@@ -1,19 +1,22 @@
 //
 // Created by guzuc on 09/11/2019.
 //
-#ifndef TPA_DIJKSTRA_GRAFO_H
-#define TPA_DIJKSTRA_GRAFO_H
+#ifndef TPA_DIJKSTRA_VETOR_H
+#define TPA_DIJKSTRA_VETOR_H
 
-#include "vetor.h"
+#include <stdbool.h>
+#include "aresta.h"
 
-typedef struct ___grafo {
-    Vetor *arestas;
+typedef struct ___vetor {
+    int tamanho;
+    int preenchido;
+    Aresta **arestas;
 } Grafo;
 
 Grafo *criaGrafo();
 
-void inserirGrafo(Grafo *grafo, Aresta *novaAresta);
+void inserirGrafo(Grafo *vetor, Aresta *novaAresta);
 
 void mostrarGrafo(Grafo *grafo);
 
-#endif //TPA_DIJKSTRA_GRAFO_H
+#endif //TPA_DIJKSTRA_VETOR_H
