@@ -13,6 +13,14 @@ void verificaArquivo(FILE *arquivo) {
     }
 }
 
+bool verificacaoDestino(Grafo *grafo, int i) {
+    return strcmp(grafo->arestas[i]->destino, grafo->arestas[i + 1]->destino) > 0;
+}
+
+bool verificacaoOrigem(Grafo *grafo, int i) {
+    return strcmp(grafo->arestas[i]->origem, grafo->arestas[i + 1]->origem) > 0;
+}
+
 Grafo *___preencherVertices(FILE *arquivo) {
     Grafo *novoGrafo = criaGrafo();
     char linha[999];
@@ -57,6 +65,8 @@ Grafo *___preencherFluxos(FILE *arquivoDistancias, FILE *arquivoFluxos) {
             grafoDistancias->arestas[indice++]->fluxoDisponivel = strtod(fluxo, NULL);
         }
     }
+    ___bubbleSort(grafoDistancias, verificacaoDestino);
+    ___bubbleSort(grafoDistancias, verificacaoOrigem);
     return grafoDistancias;
 }
 

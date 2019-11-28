@@ -13,7 +13,7 @@ int main() {
     Vetor *veiculos = preencherVeiculos(arquivoVeiculos);
 
     for (int i = 0; i < veiculos->tamanho; ++i) {
-        printf("%s %f\n", veiculos->registros[i]->placa, veiculos->registros[i]->capacidade);
+        printf("%s %.0f\n", veiculos->registros[i]->placa, veiculos->registros[i]->capacidade);
     }
 
     mostrarGrafo(grafo);

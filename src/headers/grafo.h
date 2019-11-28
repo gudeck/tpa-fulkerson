@@ -19,4 +19,6 @@ void inserirGrafo(Grafo *grafo, Aresta *novaAresta);
 
 void mostrarGrafo(Grafo *grafo);
 
+void ___bubbleSort(Grafo *grafo, bool (*verificacao)(Grafo *, int));
+
 #endif //TPA_DIJKSTRA_VETOR_H

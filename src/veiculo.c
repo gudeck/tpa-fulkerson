@@ -8,7 +8,7 @@
 
 Veiculo *criaVeiculo(char *placa, char *capacidade) {
     Veiculo *novoVeiculo = calloc(1, sizeof(Veiculo *));
-    novoVeiculo->capacidade = strtod(capacidade, NULL);
     novoVeiculo->placa = criaString(placa);
+    novoVeiculo->capacidade = strtod(capacidade, NULL);
     return novoVeiculo;
 }

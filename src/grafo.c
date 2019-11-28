@@ -42,3 +42,24 @@ void mostrarGrafo(Grafo *grafo) {
     }
     printf("\n");
 }
+
+void swap(Grafo *grafo, int menor, int maior) {
+    Aresta *aux = grafo->arestas[menor];
+    grafo->arestas[menor] = grafo->arestas[maior];
+    grafo->arestas[maior] = aux;
+}
+
+void ___bubbleSort(Grafo *grafo, bool (*verificacao)(Grafo *, int)) {
+    int limite = grafo->tamanho - 1;
+    int novoLimite;
+    while (limite != -1) {
+        novoLimite = -1;
+        for (int i = 0; i != limite; i++) {
+            if (verificacao(grafo, i)) {
+                swap(grafo, i, i + 1);
+                novoLimite = i;
+            }
+        }
+        limite = novoLimite;
+    }
+}
