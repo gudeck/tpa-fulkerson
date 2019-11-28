@@ -16,6 +16,16 @@ C:/Users/guzuc/CLionProjects/tpa-fulkerson/src/headers/arquivo.h
 headers/grafo.h
 C:/Users/guzuc/CLionProjects/tpa-fulkerson/src/headers/grafo.h
 
+C:/Users/guzuc/CLionProjects/tpa-fulkerson/src/grafo.c
+stdbool.h
+-
+stdlib.h
+-
+stdio.h
+-
+headers/grafo.h
+C:/Users/guzuc/CLionProjects/tpa-fulkerson/src/headers/grafo.h
+
 C:/Users/guzuc/CLionProjects/tpa-fulkerson/src/headers/aresta.h
 stdbool.h
 -
@@ -25,10 +35,34 @@ stdio.h
 -
 grafo.h
 C:/Users/guzuc/CLionProjects/tpa-fulkerson/src/headers/grafo.h
+vetor.h
+C:/Users/guzuc/CLionProjects/tpa-fulkerson/src/headers/vetor.h
 
 C:/Users/guzuc/CLionProjects/tpa-fulkerson/src/headers/grafo.h
 stdbool.h
 -
 aresta.h
 C:/Users/guzuc/CLionProjects/tpa-fulkerson/src/headers/aresta.h
+
+C:/Users/guzuc/CLionProjects/tpa-fulkerson/src/headers/veiculo.h
+
+C:/Users/guzuc/CLionProjects/tpa-fulkerson/src/headers/vetor.h
+veiculo.h
+C:/Users/guzuc/CLionProjects/tpa-fulkerson/src/headers/veiculo.h
+
+C:/Users/guzuc/CLionProjects/tpa-fulkerson/src/main.c
+stdlib.h
+-
+string.h
+-
+headers/arquivo.h
+C:/Users/guzuc/CLionProjects/tpa-fulkerson/src/headers/arquivo.h
+
+C:/Users/guzuc/CLionProjects/tpa-fulkerson/src/vetor.c
+stdbool.h
+-
+stdlib.h
+-
+headers/vetor.h
+C:/Users/guzuc/CLionProjects/tpa-fulkerson/src/headers/vetor.h
 

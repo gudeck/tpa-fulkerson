@@ -95,7 +95,19 @@
 		<Unit filename="C:/Users/guzuc/CLionProjects/tpa-fulkerson/src/headers/main.h">
 			<Option target="tpa_fulkerson"/>
 		</Unit>
+		<Unit filename="C:/Users/guzuc/CLionProjects/tpa-fulkerson/src/headers/veiculo.h">
+			<Option target="tpa_fulkerson"/>
+		</Unit>
+		<Unit filename="C:/Users/guzuc/CLionProjects/tpa-fulkerson/src/headers/vetor.h">
+			<Option target="tpa_fulkerson"/>
+		</Unit>
 		<Unit filename="C:/Users/guzuc/CLionProjects/tpa-fulkerson/src/main.c">
+			<Option target="tpa_fulkerson"/>
+		</Unit>
+		<Unit filename="C:/Users/guzuc/CLionProjects/tpa-fulkerson/src/veiculo.c">
+			<Option target="tpa_fulkerson"/>
+		</Unit>
+		<Unit filename="C:/Users/guzuc/CLionProjects/tpa-fulkerson/src/vetor.c">
 			<Option target="tpa_fulkerson"/>
 		</Unit>
 		<Unit filename="C:/Users/guzuc/CLionProjects/tpa-fulkerson/CMakeLists.txt">

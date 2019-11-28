@@ -14,22 +14,22 @@ Grafo *criaGrafo() {
     return novoVetor;
 }
 
-bool precisaExpandir(Grafo *vetor) {
-    return (vetor->tamanho - vetor->preenchido) == 0;
+bool precisaExpandirGrafo(Grafo *grafo) {
+    return (grafo->tamanho - grafo->preenchido) == 0;
 }
 
-void expandeVetor(Grafo *vetor) {
-    Aresta **novoArray = calloc(vetor->tamanho + 1, sizeof(Aresta *));
-    for (int i = 0; i < vetor->tamanho; ++i) {
-        novoArray[i] = vetor->arestas[i];
+void expandeGrafo(Grafo *grafo) {
+    Aresta **novoArray = calloc(grafo->tamanho + 1, sizeof(Aresta *));
+    for (int i = 0; i < grafo->tamanho; ++i) {
+        novoArray[i] = grafo->arestas[i];
     }
-    vetor->arestas = novoArray;
-    vetor->tamanho = vetor->tamanho + 1;
+    grafo->arestas = novoArray;
+    grafo->tamanho = grafo->tamanho + 1;
 }
 
-void inserirGrafo(Grafo *vetor, Aresta *novaAresta) {
-    if (precisaExpandir(vetor)) expandeVetor(vetor);
-    vetor->arestas[vetor->preenchido++] = novaAresta;
+void inserirGrafo(Grafo *grafo, Aresta *novaAresta) {
+    if (precisaExpandirGrafo(grafo)) expandeGrafo(grafo);
+    grafo->arestas[grafo->preenchido++] = novaAresta;
 }
 
 void mostrarGrafo(Grafo *grafo) {

@@ -108,12 +108,40 @@ CMakeFiles/tpa_fulkerson.dir/src/grafo.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/tpa_fulkerson.dir/src/grafo.c.s"
 	C:\Users\guzuc\Desktop\dev_c_cpp\MiniGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\guzuc\CLionProjects\tpa-fulkerson\src\grafo.c -o CMakeFiles\tpa_fulkerson.dir\src\grafo.c.s
 
+CMakeFiles/tpa_fulkerson.dir/src/veiculo.c.obj: CMakeFiles/tpa_fulkerson.dir/flags.make
+CMakeFiles/tpa_fulkerson.dir/src/veiculo.c.obj: ../src/veiculo.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\guzuc\CLionProjects\tpa-fulkerson\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/tpa_fulkerson.dir/src/veiculo.c.obj"
+	C:\Users\guzuc\Desktop\dev_c_cpp\MiniGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\tpa_fulkerson.dir\src\veiculo.c.obj   -c C:\Users\guzuc\CLionProjects\tpa-fulkerson\src\veiculo.c
+
+CMakeFiles/tpa_fulkerson.dir/src/veiculo.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/tpa_fulkerson.dir/src/veiculo.c.i"
+	C:\Users\guzuc\Desktop\dev_c_cpp\MiniGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\guzuc\CLionProjects\tpa-fulkerson\src\veiculo.c > CMakeFiles\tpa_fulkerson.dir\src\veiculo.c.i
+
+CMakeFiles/tpa_fulkerson.dir/src/veiculo.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/tpa_fulkerson.dir/src/veiculo.c.s"
+	C:\Users\guzuc\Desktop\dev_c_cpp\MiniGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\guzuc\CLionProjects\tpa-fulkerson\src\veiculo.c -o CMakeFiles\tpa_fulkerson.dir\src\veiculo.c.s
+
+CMakeFiles/tpa_fulkerson.dir/src/vetor.c.obj: CMakeFiles/tpa_fulkerson.dir/flags.make
+CMakeFiles/tpa_fulkerson.dir/src/vetor.c.obj: ../src/vetor.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\guzuc\CLionProjects\tpa-fulkerson\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/tpa_fulkerson.dir/src/vetor.c.obj"
+	C:\Users\guzuc\Desktop\dev_c_cpp\MiniGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\tpa_fulkerson.dir\src\vetor.c.obj   -c C:\Users\guzuc\CLionProjects\tpa-fulkerson\src\vetor.c
+
+CMakeFiles/tpa_fulkerson.dir/src/vetor.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/tpa_fulkerson.dir/src/vetor.c.i"
+	C:\Users\guzuc\Desktop\dev_c_cpp\MiniGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\guzuc\CLionProjects\tpa-fulkerson\src\vetor.c > CMakeFiles\tpa_fulkerson.dir\src\vetor.c.i
+
+CMakeFiles/tpa_fulkerson.dir/src/vetor.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/tpa_fulkerson.dir/src/vetor.c.s"
+	C:\Users\guzuc\Desktop\dev_c_cpp\MiniGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\guzuc\CLionProjects\tpa-fulkerson\src\vetor.c -o CMakeFiles\tpa_fulkerson.dir\src\vetor.c.s
+
 # Object files for target tpa_fulkerson
 tpa_fulkerson_OBJECTS = \
 "CMakeFiles/tpa_fulkerson.dir/src/aresta.c.obj" \
 "CMakeFiles/tpa_fulkerson.dir/src/arquivo.c.obj" \
 "CMakeFiles/tpa_fulkerson.dir/src/main.c.obj" \
-"CMakeFiles/tpa_fulkerson.dir/src/grafo.c.obj"
+"CMakeFiles/tpa_fulkerson.dir/src/grafo.c.obj" \
+"CMakeFiles/tpa_fulkerson.dir/src/veiculo.c.obj" \
+"CMakeFiles/tpa_fulkerson.dir/src/vetor.c.obj"
 
 # External object files for target tpa_fulkerson
 tpa_fulkerson_EXTERNAL_OBJECTS =
@@ -122,11 +150,13 @@ tpa_fulkerson.exe: CMakeFiles/tpa_fulkerson.dir/src/aresta.c.obj
 tpa_fulkerson.exe: CMakeFiles/tpa_fulkerson.dir/src/arquivo.c.obj
 tpa_fulkerson.exe: CMakeFiles/tpa_fulkerson.dir/src/main.c.obj
 tpa_fulkerson.exe: CMakeFiles/tpa_fulkerson.dir/src/grafo.c.obj
+tpa_fulkerson.exe: CMakeFiles/tpa_fulkerson.dir/src/veiculo.c.obj
+tpa_fulkerson.exe: CMakeFiles/tpa_fulkerson.dir/src/vetor.c.obj
 tpa_fulkerson.exe: CMakeFiles/tpa_fulkerson.dir/build.make
 tpa_fulkerson.exe: CMakeFiles/tpa_fulkerson.dir/linklibs.rsp
 tpa_fulkerson.exe: CMakeFiles/tpa_fulkerson.dir/objects1.rsp
 tpa_fulkerson.exe: CMakeFiles/tpa_fulkerson.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\guzuc\CLionProjects\tpa-fulkerson\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable tpa_fulkerson.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\guzuc\CLionProjects\tpa-fulkerson\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable tpa_fulkerson.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\tpa_fulkerson.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -230,6 +230,60 @@ src/main.c.s:
 	$(MAKE) -f CMakeFiles\tpa_fulkerson.dir\build.make CMakeFiles/tpa_fulkerson.dir/src/main.c.s
 .PHONY : src/main.c.s
 
+src/veiculo.obj: src/veiculo.c.obj
+
+.PHONY : src/veiculo.obj
+
+# target to build an object file
+src/veiculo.c.obj:
+	$(MAKE) -f CMakeFiles\tpa_fulkerson.dir\build.make CMakeFiles/tpa_fulkerson.dir/src/veiculo.c.obj
+.PHONY : src/veiculo.c.obj
+
+src/veiculo.i: src/veiculo.c.i
+
+.PHONY : src/veiculo.i
+
+# target to preprocess a source file
+src/veiculo.c.i:
+	$(MAKE) -f CMakeFiles\tpa_fulkerson.dir\build.make CMakeFiles/tpa_fulkerson.dir/src/veiculo.c.i
+.PHONY : src/veiculo.c.i
+
+src/veiculo.s: src/veiculo.c.s
+
+.PHONY : src/veiculo.s
+
+# target to generate assembly for a file
+src/veiculo.c.s:
+	$(MAKE) -f CMakeFiles\tpa_fulkerson.dir\build.make CMakeFiles/tpa_fulkerson.dir/src/veiculo.c.s
+.PHONY : src/veiculo.c.s
+
+src/vetor.obj: src/vetor.c.obj
+
+.PHONY : src/vetor.obj
+
+# target to build an object file
+src/vetor.c.obj:
+	$(MAKE) -f CMakeFiles\tpa_fulkerson.dir\build.make CMakeFiles/tpa_fulkerson.dir/src/vetor.c.obj
+.PHONY : src/vetor.c.obj
+
+src/vetor.i: src/vetor.c.i
+
+.PHONY : src/vetor.i
+
+# target to preprocess a source file
+src/vetor.c.i:
+	$(MAKE) -f CMakeFiles\tpa_fulkerson.dir\build.make CMakeFiles/tpa_fulkerson.dir/src/vetor.c.i
+.PHONY : src/vetor.c.i
+
+src/vetor.s: src/vetor.c.s
+
+.PHONY : src/vetor.s
+
+# target to generate assembly for a file
+src/vetor.c.s:
+	$(MAKE) -f CMakeFiles\tpa_fulkerson.dir\build.make CMakeFiles/tpa_fulkerson.dir/src/vetor.c.s
+.PHONY : src/vetor.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -251,6 +305,12 @@ help:
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
+	@echo ... src/veiculo.obj
+	@echo ... src/veiculo.i
+	@echo ... src/veiculo.s
+	@echo ... src/vetor.obj
+	@echo ... src/vetor.i
+	@echo ... src/vetor.s
 .PHONY : help
 
 

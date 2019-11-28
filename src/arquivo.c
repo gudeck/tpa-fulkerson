@@ -65,3 +65,23 @@ Grafo *preencherGrafo(FILE *arquivoDistancias, FILE *arquivoFluxos) {
     verificaArquivo(arquivoFluxos);
     return ___preencherFluxos(arquivoDistancias, arquivoFluxos);
 }
+
+Vetor *___preencherVeiculos(FILE *arquivo) {
+    Vetor *novoVetor = criaVetor();
+    char linha[999];
+    char *placa;
+    char *capacidade;
+    fgets(linha, 999, arquivo);
+    for (int i = 0; fgets(linha, 999, arquivo); i++) {
+        placa = strtok(linha, ";");
+        capacidade = strtok(NULL, ";");
+        inserirVetor(novoVetor, criaVeiculo(placa, capacidade));
+    }
+    return novoVetor;
+}
+
+Vetor *preencherVeiculos(FILE *arquivoVeiculos) {
+    verificaArquivo(arquivoVeiculos);
+    return ___preencherVeiculos(arquivoVeiculos);
+}
+

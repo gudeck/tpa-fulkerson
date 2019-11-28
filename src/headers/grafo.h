@@ -7,7 +7,7 @@
 #include <stdbool.h>
 #include "aresta.h"
 
-typedef struct ___vetor {
+typedef struct ___grafo {
     int tamanho;
     int preenchido;
     Aresta **arestas;
@@ -15,7 +15,7 @@ typedef struct ___vetor {
 
 Grafo *criaGrafo();
 
-void inserirGrafo(Grafo *vetor, Aresta *novaAresta);
+void inserirGrafo(Grafo *grafo, Aresta *novaAresta);
 
 void mostrarGrafo(Grafo *grafo);
 

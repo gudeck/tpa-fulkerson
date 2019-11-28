@@ -6,7 +6,10 @@
 
 #include <stdio.h>
 #include "grafo.h"
+#include "vetor.h"
 
 Grafo *preencherGrafo(FILE *arquivoDistancias, FILE *arquivoFluxos);
+
+Vetor *preencherVeiculos(FILE *arquivoVeiculos);
 
 #endif //TPA_DIJKSTRA_ARQUIVO_H

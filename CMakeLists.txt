@@ -11,4 +11,4 @@ add_executable(tpa_fulkerson
         src/aresta.c
         src/arquivo.c
         src/main.c
-        src/grafo.c)
+        src/grafo.c src/veiculo.c src/headers/veiculo.h src/vetor.c src/headers/vetor.h)

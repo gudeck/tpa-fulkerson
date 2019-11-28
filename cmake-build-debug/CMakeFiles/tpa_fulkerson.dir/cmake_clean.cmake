@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/tpa_fulkerson.dir/src/arquivo.c.obj"
   "CMakeFiles/tpa_fulkerson.dir/src/grafo.c.obj"
   "CMakeFiles/tpa_fulkerson.dir/src/main.c.obj"
+  "CMakeFiles/tpa_fulkerson.dir/src/veiculo.c.obj"
+  "CMakeFiles/tpa_fulkerson.dir/src/vetor.c.obj"
   "libtpa_fulkerson.dll.a"
   "tpa_fulkerson.exe"
   "tpa_fulkerson.exe.manifest"
