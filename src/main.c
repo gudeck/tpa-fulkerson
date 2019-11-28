@@ -4,6 +4,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "headers/arquivo.h"
+#include "headers/fulkerson.h"
 
 int main() {
     FILE *arquivoDistancias = fopen("../distancias.txt", "r");
@@ -12,11 +13,13 @@ int main() {
     Grafo *grafo = preencherGrafo(arquivoDistancias, arquivoFluxos);
     Vetor *veiculos = preencherVeiculos(arquivoVeiculos);
 
-    for (int i = 0; i < veiculos->tamanho; ++i) {
-        printf("%s %.0f\n", veiculos->registros[i]->placa, veiculos->registros[i]->capacidade);
-    }
+//    for (int i = 0; i < veiculos->tamanho; ++i) {
+//        printf("%s %.0f\n", veiculos->registros[i]->placa, veiculos->registros[i]->capacidade);
+//    }
+//
+//    mostrarGrafo(grafo);
 
-    mostrarGrafo(grafo);
+    ___buscarCaminhos(grafo, "A", "J");
 
     return 0;
 }

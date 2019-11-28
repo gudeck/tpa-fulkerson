@@ -29,6 +29,8 @@ CMakeFiles/tpa_fulkerson.dir/src/grafo.c.obj: ../src/headers/grafo.h
 
 CMakeFiles/tpa_fulkerson.dir/src/main.c.obj: ../src/headers/aresta.h
 CMakeFiles/tpa_fulkerson.dir/src/main.c.obj: ../src/headers/arquivo.h
+CMakeFiles/tpa_fulkerson.dir/src/main.c.obj: ../src/headers/caminho.h
+CMakeFiles/tpa_fulkerson.dir/src/main.c.obj: ../src/headers/fulkerson.h
 CMakeFiles/tpa_fulkerson.dir/src/main.c.obj: ../src/headers/grafo.h
 CMakeFiles/tpa_fulkerson.dir/src/main.c.obj: ../src/headers/veiculo.h
 CMakeFiles/tpa_fulkerson.dir/src/main.c.obj: ../src/headers/vetor.h

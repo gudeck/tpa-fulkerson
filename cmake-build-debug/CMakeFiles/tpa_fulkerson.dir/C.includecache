@@ -6,17 +6,33 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/2017122760013/Desktop/tpa-fulkerson/src/headers/veiculo.h
+C:/Users/2017122760013/CLionProjects/tpa-fulkerson/src/fulkerson.c
+string.h
+-
+stdio.h
+-
+headers/fulkerson.h
+C:/Users/2017122760013/CLionProjects/tpa-fulkerson/src/headers/fulkerson.h
+headers/caminho.h
+C:/Users/2017122760013/CLionProjects/tpa-fulkerson/src/headers/caminho.h
 
-C:/Users/2017122760013/Desktop/tpa-fulkerson/src/headers/vetor.h
-veiculo.h
-C:/Users/2017122760013/Desktop/tpa-fulkerson/src/headers/veiculo.h
-
-C:/Users/2017122760013/Desktop/tpa-fulkerson/src/vetor.c
+C:/Users/2017122760013/CLionProjects/tpa-fulkerson/src/headers/aresta.h
 stdbool.h
 -
-stdlib.h
+
+C:/Users/2017122760013/CLionProjects/tpa-fulkerson/src/headers/caminho.h
+grafo.h
+C:/Users/2017122760013/CLionProjects/tpa-fulkerson/src/headers/grafo.h
+
+C:/Users/2017122760013/CLionProjects/tpa-fulkerson/src/headers/fulkerson.h
+grafo.h
+C:/Users/2017122760013/CLionProjects/tpa-fulkerson/src/headers/grafo.h
+caminho.h
+C:/Users/2017122760013/CLionProjects/tpa-fulkerson/src/headers/caminho.h
+
+C:/Users/2017122760013/CLionProjects/tpa-fulkerson/src/headers/grafo.h
+stdbool.h
 -
-headers/vetor.h
-C:/Users/2017122760013/Desktop/tpa-fulkerson/src/headers/vetor.h
+aresta.h
+C:/Users/2017122760013/CLionProjects/tpa-fulkerson/src/headers/aresta.h
 

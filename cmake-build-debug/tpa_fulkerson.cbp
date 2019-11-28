@@ -8,18 +8,18 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/2017122760013/Desktop/tpa-fulkerson/cmake-build-debug"/>
+				<Option working_dir="C:/Users/2017122760013/CLionProjects/tpa-fulkerson/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/bin/mingw32-make.exe -f &quot;C:/Users/2017122760013/Desktop/tpa-fulkerson/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/bin/mingw32-make.exe -f &quot;C:/Users/2017122760013/Desktop/tpa-fulkerson/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/bin/mingw32-make.exe -f &quot;C:/Users/2017122760013/Desktop/tpa-fulkerson/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/bin/mingw32-make.exe -f &quot;C:/Users/2017122760013/Desktop/tpa-fulkerson/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/bin/mingw32-make.exe -f &quot;C:/Users/2017122760013/CLionProjects/tpa-fulkerson/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/bin/mingw32-make.exe -f &quot;C:/Users/2017122760013/CLionProjects/tpa-fulkerson/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/bin/mingw32-make.exe -f &quot;C:/Users/2017122760013/CLionProjects/tpa-fulkerson/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/bin/mingw32-make.exe -f &quot;C:/Users/2017122760013/CLionProjects/tpa-fulkerson/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="tpa_fulkerson">
-				<Option output="C:/Users/2017122760013/Desktop/tpa-fulkerson/cmake-build-debug/tpa_fulkerson.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/2017122760013/Desktop/tpa-fulkerson/cmake-build-debug"/>
+				<Option output="C:/Users/2017122760013/CLionProjects/tpa-fulkerson/cmake-build-debug/tpa_fulkerson.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/2017122760013/CLionProjects/tpa-fulkerson/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -29,15 +29,15 @@
 					<Add directory="c:\users\2017122760013\desktop\dev_c_cpp\minigw\bin\../lib/gcc/mingw32/8.2.0/include-fixed"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/bin/mingw32-make.exe -f &quot;C:/Users/2017122760013/Desktop/tpa-fulkerson/cmake-build-debug/Makefile&quot;  VERBOSE=1 tpa_fulkerson"/>
-					<CompileFile command="C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/bin/mingw32-make.exe -f &quot;C:/Users/2017122760013/Desktop/tpa-fulkerson/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/bin/mingw32-make.exe -f &quot;C:/Users/2017122760013/Desktop/tpa-fulkerson/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/bin/mingw32-make.exe -f &quot;C:/Users/2017122760013/Desktop/tpa-fulkerson/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/bin/mingw32-make.exe -f &quot;C:/Users/2017122760013/CLionProjects/tpa-fulkerson/cmake-build-debug/Makefile&quot;  VERBOSE=1 tpa_fulkerson"/>
+					<CompileFile command="C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/bin/mingw32-make.exe -f &quot;C:/Users/2017122760013/CLionProjects/tpa-fulkerson/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/bin/mingw32-make.exe -f &quot;C:/Users/2017122760013/CLionProjects/tpa-fulkerson/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/bin/mingw32-make.exe -f &quot;C:/Users/2017122760013/CLionProjects/tpa-fulkerson/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="tpa_fulkerson/fast">
-				<Option output="C:/Users/2017122760013/Desktop/tpa-fulkerson/cmake-build-debug/tpa_fulkerson.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/2017122760013/Desktop/tpa-fulkerson/cmake-build-debug"/>
+				<Option output="C:/Users/2017122760013/CLionProjects/tpa-fulkerson/cmake-build-debug/tpa_fulkerson.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/2017122760013/CLionProjects/tpa-fulkerson/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -47,82 +47,82 @@
 					<Add directory="c:\users\2017122760013\desktop\dev_c_cpp\minigw\bin\../lib/gcc/mingw32/8.2.0/include-fixed"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/bin/mingw32-make.exe -f &quot;C:/Users/2017122760013/Desktop/tpa-fulkerson/cmake-build-debug/Makefile&quot;  VERBOSE=1 tpa_fulkerson/fast"/>
-					<CompileFile command="C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/bin/mingw32-make.exe -f &quot;C:/Users/2017122760013/Desktop/tpa-fulkerson/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/bin/mingw32-make.exe -f &quot;C:/Users/2017122760013/Desktop/tpa-fulkerson/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/bin/mingw32-make.exe -f &quot;C:/Users/2017122760013/Desktop/tpa-fulkerson/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/bin/mingw32-make.exe -f &quot;C:/Users/2017122760013/CLionProjects/tpa-fulkerson/cmake-build-debug/Makefile&quot;  VERBOSE=1 tpa_fulkerson/fast"/>
+					<CompileFile command="C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/bin/mingw32-make.exe -f &quot;C:/Users/2017122760013/CLionProjects/tpa-fulkerson/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/bin/mingw32-make.exe -f &quot;C:/Users/2017122760013/CLionProjects/tpa-fulkerson/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/bin/mingw32-make.exe -f &quot;C:/Users/2017122760013/CLionProjects/tpa-fulkerson/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="C:/Users/2017122760013/Desktop/tpa-fulkerson/cmake-build-debug"/>
+				<Option working_dir="C:/Users/2017122760013/CLionProjects/tpa-fulkerson/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/bin/mingw32-make.exe -f &quot;C:/Users/2017122760013/Desktop/tpa-fulkerson/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/bin/mingw32-make.exe -f &quot;C:/Users/2017122760013/Desktop/tpa-fulkerson/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/bin/mingw32-make.exe -f &quot;C:/Users/2017122760013/Desktop/tpa-fulkerson/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/bin/mingw32-make.exe -f &quot;C:/Users/2017122760013/Desktop/tpa-fulkerson/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/bin/mingw32-make.exe -f &quot;C:/Users/2017122760013/CLionProjects/tpa-fulkerson/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/bin/mingw32-make.exe -f &quot;C:/Users/2017122760013/CLionProjects/tpa-fulkerson/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/bin/mingw32-make.exe -f &quot;C:/Users/2017122760013/CLionProjects/tpa-fulkerson/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/bin/mingw32-make.exe -f &quot;C:/Users/2017122760013/CLionProjects/tpa-fulkerson/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/2017122760013/Desktop/tpa-fulkerson/cmake-build-debug"/>
+				<Option working_dir="C:/Users/2017122760013/CLionProjects/tpa-fulkerson/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/bin/mingw32-make.exe -f &quot;C:/Users/2017122760013/Desktop/tpa-fulkerson/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/bin/mingw32-make.exe -f &quot;C:/Users/2017122760013/Desktop/tpa-fulkerson/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/bin/mingw32-make.exe -f &quot;C:/Users/2017122760013/Desktop/tpa-fulkerson/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/bin/mingw32-make.exe -f &quot;C:/Users/2017122760013/Desktop/tpa-fulkerson/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/bin/mingw32-make.exe -f &quot;C:/Users/2017122760013/CLionProjects/tpa-fulkerson/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/bin/mingw32-make.exe -f &quot;C:/Users/2017122760013/CLionProjects/tpa-fulkerson/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/bin/mingw32-make.exe -f &quot;C:/Users/2017122760013/CLionProjects/tpa-fulkerson/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/bin/mingw32-make.exe -f &quot;C:/Users/2017122760013/CLionProjects/tpa-fulkerson/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/2017122760013/Desktop/tpa-fulkerson/src/aresta.c">
+		<Unit filename="C:/Users/2017122760013/CLionProjects/tpa-fulkerson/src/aresta.c">
 			<Option target="tpa_fulkerson"/>
 		</Unit>
-		<Unit filename="C:/Users/2017122760013/Desktop/tpa-fulkerson/src/arquivo.c">
+		<Unit filename="C:/Users/2017122760013/CLionProjects/tpa-fulkerson/src/arquivo.c">
 			<Option target="tpa_fulkerson"/>
 		</Unit>
-		<Unit filename="C:/Users/2017122760013/Desktop/tpa-fulkerson/src/caminho.c">
+		<Unit filename="C:/Users/2017122760013/CLionProjects/tpa-fulkerson/src/caminho.c">
 			<Option target="tpa_fulkerson"/>
 		</Unit>
-		<Unit filename="C:/Users/2017122760013/Desktop/tpa-fulkerson/src/fulkerson.c">
+		<Unit filename="C:/Users/2017122760013/CLionProjects/tpa-fulkerson/src/fulkerson.c">
 			<Option target="tpa_fulkerson"/>
 		</Unit>
-		<Unit filename="C:/Users/2017122760013/Desktop/tpa-fulkerson/src/grafo.c">
+		<Unit filename="C:/Users/2017122760013/CLionProjects/tpa-fulkerson/src/grafo.c">
 			<Option target="tpa_fulkerson"/>
 		</Unit>
-		<Unit filename="C:/Users/2017122760013/Desktop/tpa-fulkerson/src/headers/aresta.h">
+		<Unit filename="C:/Users/2017122760013/CLionProjects/tpa-fulkerson/src/headers/aresta.h">
 			<Option target="tpa_fulkerson"/>
 		</Unit>
-		<Unit filename="C:/Users/2017122760013/Desktop/tpa-fulkerson/src/headers/arquivo.h">
+		<Unit filename="C:/Users/2017122760013/CLionProjects/tpa-fulkerson/src/headers/arquivo.h">
 			<Option target="tpa_fulkerson"/>
 		</Unit>
-		<Unit filename="C:/Users/2017122760013/Desktop/tpa-fulkerson/src/headers/caminho.h">
+		<Unit filename="C:/Users/2017122760013/CLionProjects/tpa-fulkerson/src/headers/caminho.h">
 			<Option target="tpa_fulkerson"/>
 		</Unit>
-		<Unit filename="C:/Users/2017122760013/Desktop/tpa-fulkerson/src/headers/fulkerson.h">
+		<Unit filename="C:/Users/2017122760013/CLionProjects/tpa-fulkerson/src/headers/fulkerson.h">
 			<Option target="tpa_fulkerson"/>
 		</Unit>
-		<Unit filename="C:/Users/2017122760013/Desktop/tpa-fulkerson/src/headers/grafo.h">
+		<Unit filename="C:/Users/2017122760013/CLionProjects/tpa-fulkerson/src/headers/grafo.h">
 			<Option target="tpa_fulkerson"/>
 		</Unit>
-		<Unit filename="C:/Users/2017122760013/Desktop/tpa-fulkerson/src/headers/main.h">
+		<Unit filename="C:/Users/2017122760013/CLionProjects/tpa-fulkerson/src/headers/main.h">
 			<Option target="tpa_fulkerson"/>
 		</Unit>
-		<Unit filename="C:/Users/2017122760013/Desktop/tpa-fulkerson/src/headers/veiculo.h">
+		<Unit filename="C:/Users/2017122760013/CLionProjects/tpa-fulkerson/src/headers/veiculo.h">
 			<Option target="tpa_fulkerson"/>
 		</Unit>
-		<Unit filename="C:/Users/2017122760013/Desktop/tpa-fulkerson/src/headers/vetor.h">
+		<Unit filename="C:/Users/2017122760013/CLionProjects/tpa-fulkerson/src/headers/vetor.h">
 			<Option target="tpa_fulkerson"/>
 		</Unit>
-		<Unit filename="C:/Users/2017122760013/Desktop/tpa-fulkerson/src/main.c">
+		<Unit filename="C:/Users/2017122760013/CLionProjects/tpa-fulkerson/src/main.c">
 			<Option target="tpa_fulkerson"/>
 		</Unit>
-		<Unit filename="C:/Users/2017122760013/Desktop/tpa-fulkerson/src/veiculo.c">
+		<Unit filename="C:/Users/2017122760013/CLionProjects/tpa-fulkerson/src/veiculo.c">
 			<Option target="tpa_fulkerson"/>
 		</Unit>
-		<Unit filename="C:/Users/2017122760013/Desktop/tpa-fulkerson/src/vetor.c">
+		<Unit filename="C:/Users/2017122760013/CLionProjects/tpa-fulkerson/src/vetor.c">
 			<Option target="tpa_fulkerson"/>
 		</Unit>
-		<Unit filename="C:/Users/2017122760013/Desktop/tpa-fulkerson/CMakeLists.txt">
+		<Unit filename="C:/Users/2017122760013/CLionProjects/tpa-fulkerson/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
