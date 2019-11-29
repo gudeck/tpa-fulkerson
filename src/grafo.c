@@ -32,8 +32,26 @@ void inserirGrafo(Grafo *grafo, Aresta *novaAresta) {
     grafo->arestas[grafo->preenchido++] = novaAresta;
 }
 
+bool precisaEncolherGrafo(Grafo *grafo) {
+    return (grafo->tamanho - grafo->preenchido) > 0;
+}
+
+void encolheGrafo(Grafo *grafo) {
+    Aresta **novoArray = calloc(--grafo->tamanho, sizeof(Aresta *));
+    for (int i = 0; i < grafo->tamanho; ++i) {
+        novoArray[i] = grafo->arestas[i];
+    }
+    grafo->arestas = novoArray;
+}
+
+void removerGrafo(Grafo *grafo) {
+    if (precisaEncolherGrafo(grafo))encolheGrafo(grafo);
+    grafo->arestas[grafo->preenchido--] = NULL;
+}
+
 void mostrarGrafo(Grafo *grafo) {
     printf("\n");
+    printf("FM: %.0f\n", grafo->fluxoMaximo);
     for (int i = 0; i < grafo->tamanho; ++i) {
         printf("%s -> %s = D: %.0f F: %.0f\n", grafo->arestas[i]->origem,
                grafo->arestas[i]->destino,

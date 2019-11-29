@@ -10,12 +10,15 @@
 typedef struct ___grafo {
     int tamanho;
     int preenchido;
+    double fluxoMaximo;
     Aresta **arestas;
 } Grafo;
 
 Grafo *criaGrafo();
 
 void inserirGrafo(Grafo *grafo, Aresta *novaAresta);
+
+void removerGrafo(Grafo *grafo);
 
 void mostrarGrafo(Grafo *grafo);
 

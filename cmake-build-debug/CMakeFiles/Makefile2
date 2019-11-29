@@ -49,19 +49,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = C:\Users\2017122760013\Desktop\dev_c_cpp\CLion\bin\cmake\win\bin\cmake.exe
+CMAKE_COMMAND = C:\Users\guzuc\Desktop\dev_c_cpp\CLion\bin\cmake\win\bin\cmake.exe
 
 # The command to remove a file.
-RM = C:\Users\2017122760013\Desktop\dev_c_cpp\CLion\bin\cmake\win\bin\cmake.exe -E remove -f
+RM = C:\Users\guzuc\Desktop\dev_c_cpp\CLion\bin\cmake\win\bin\cmake.exe -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\2017122760013\CLionProjects\tpa-fulkerson
+CMAKE_SOURCE_DIR = C:\Users\guzuc\Desktop\tpa-fulkerson
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\2017122760013\CLionProjects\tpa-fulkerson\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\guzuc\Desktop\tpa-fulkerson\cmake-build-debug
 
 #=============================================================================
 # Target rules for target CMakeFiles/tpa_fulkerson.dir
@@ -70,7 +70,7 @@ CMAKE_BINARY_DIR = C:\Users\2017122760013\CLionProjects\tpa-fulkerson\cmake-buil
 CMakeFiles/tpa_fulkerson.dir/all:
 	$(MAKE) -f CMakeFiles\tpa_fulkerson.dir\build.make CMakeFiles/tpa_fulkerson.dir/depend
 	$(MAKE) -f CMakeFiles\tpa_fulkerson.dir\build.make CMakeFiles/tpa_fulkerson.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\2017122760013\CLionProjects\tpa-fulkerson\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target tpa_fulkerson"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\guzuc\Desktop\tpa-fulkerson\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target tpa_fulkerson"
 .PHONY : CMakeFiles/tpa_fulkerson.dir/all
 
 # Include target in all.
@@ -80,9 +80,9 @@ all: CMakeFiles/tpa_fulkerson.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/tpa_fulkerson.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\2017122760013\CLionProjects\tpa-fulkerson\cmake-build-debug\CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\guzuc\Desktop\tpa-fulkerson\cmake-build-debug\CMakeFiles 9
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/tpa_fulkerson.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\2017122760013\CLionProjects\tpa-fulkerson\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\guzuc\Desktop\tpa-fulkerson\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/tpa_fulkerson.dir/rule
 
 # Convenience name for target.

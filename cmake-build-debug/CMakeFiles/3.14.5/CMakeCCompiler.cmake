@@ -1,4 +1,4 @@
-set(CMAKE_C_COMPILER "C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/bin/gcc.exe")
+set(CMAKE_C_COMPILER "C:/Users/guzuc/Desktop/dev_c_cpp/MiniGW/bin/gcc.exe")
 set(CMAKE_C_COMPILER_ARG1 "")
 set(CMAKE_C_COMPILER_ID "GNU")
 set(CMAKE_C_COMPILER_VERSION "8.2.0")
@@ -16,11 +16,11 @@ set(CMAKE_C_SIMULATE_VERSION "")
 
 
 
-set(CMAKE_AR "C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/bin/ar.exe")
-set(CMAKE_C_COMPILER_AR "C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/bin/gcc-ar.exe")
-set(CMAKE_RANLIB "C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/bin/ranlib.exe")
-set(CMAKE_C_COMPILER_RANLIB "C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/bin/gcc-ranlib.exe")
-set(CMAKE_LINKER "C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/bin/ld.exe")
+set(CMAKE_AR "C:/Users/guzuc/Desktop/dev_c_cpp/MiniGW/bin/ar.exe")
+set(CMAKE_C_COMPILER_AR "C:/Users/guzuc/Desktop/dev_c_cpp/MiniGW/bin/gcc-ar.exe")
+set(CMAKE_RANLIB "C:/Users/guzuc/Desktop/dev_c_cpp/MiniGW/bin/ranlib.exe")
+set(CMAKE_C_COMPILER_RANLIB "C:/Users/guzuc/Desktop/dev_c_cpp/MiniGW/bin/gcc-ranlib.exe")
+set(CMAKE_LINKER "C:/Users/guzuc/Desktop/dev_c_cpp/MiniGW/bin/ld.exe")
 set(CMAKE_MT "")
 set(CMAKE_COMPILER_IS_GNUCC 1)
 set(CMAKE_C_COMPILER_LOADED 1)
@@ -69,7 +69,7 @@ endif()
 
 
 
-set(CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES "C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/lib/gcc/mingw32/8.2.0/include;C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/include;C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/lib/gcc/mingw32/8.2.0/include-fixed")
+set(CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES "C:/Users/guzuc/Desktop/dev_c_cpp/MiniGW/lib/gcc/mingw32/8.2.0/include;C:/Users/guzuc/Desktop/dev_c_cpp/MiniGW/include;C:/Users/guzuc/Desktop/dev_c_cpp/MiniGW/lib/gcc/mingw32/8.2.0/include-fixed")
 set(CMAKE_C_IMPLICIT_LINK_LIBRARIES "mingw32;gcc;moldname;mingwex;advapi32;shell32;user32;kernel32;mingw32;gcc;moldname;mingwex")
-set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/lib/gcc/mingw32/8.2.0;C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/lib/gcc;C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/mingw32/lib;C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/lib")
+set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "C:/Users/guzuc/Desktop/dev_c_cpp/MiniGW/lib/gcc/mingw32/8.2.0;C:/Users/guzuc/Desktop/dev_c_cpp/MiniGW/lib/gcc;C:/Users/guzuc/Desktop/dev_c_cpp/MiniGW/mingw32/lib;C:/Users/guzuc/Desktop/dev_c_cpp/MiniGW/lib")
 set(CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")

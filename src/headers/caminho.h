@@ -10,11 +10,14 @@
 typedef struct ___caminho {
     int tamanho;
     int preenchido;
+    double fluxoMaximo;
     Grafo **registros;
 } Caminho;
 
 Caminho *criaCaminho();
 
 void inserirCaminho(Caminho *caminho, Grafo *novoRegistro);
+
+void mostrarCaminho(Caminho *caminho);
 
 #endif //TPA_FULKERSON_CAMINHO_H

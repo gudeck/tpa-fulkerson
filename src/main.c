@@ -13,13 +13,7 @@ int main() {
     Grafo *grafo = preencherGrafo(arquivoDistancias, arquivoFluxos);
     Vetor *veiculos = preencherVeiculos(arquivoVeiculos);
 
-//    for (int i = 0; i < veiculos->tamanho; ++i) {
-//        printf("%s %.0f\n", veiculos->registros[i]->placa, veiculos->registros[i]->capacidade);
-//    }
-//
-//    mostrarGrafo(grafo);
-
-    ___buscarCaminhos(grafo, "A", "J");
+    mostrarCaminho(___buscarCaminhos(grafo, "D", "J"));
 
     return 0;
 }
