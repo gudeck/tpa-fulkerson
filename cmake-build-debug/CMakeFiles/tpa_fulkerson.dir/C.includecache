@@ -6,47 +6,35 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/guzuc/Desktop/tpa-fulkerson/src/headers/aresta.h
+C:/Users/2017122760013/CLionProjects/tpa-fulkerson/src/fulkerson.c
+string.h
+-
+stdio.h
+-
+math.h
+-
+headers/fulkerson.h
+C:/Users/2017122760013/CLionProjects/tpa-fulkerson/src/headers/fulkerson.h
+headers/caminho.h
+C:/Users/2017122760013/CLionProjects/tpa-fulkerson/src/headers/caminho.h
+
+C:/Users/2017122760013/CLionProjects/tpa-fulkerson/src/headers/aresta.h
 stdbool.h
 -
 
-C:/Users/guzuc/Desktop/tpa-fulkerson/src/headers/arquivo.h
-stdio.h
--
+C:/Users/2017122760013/CLionProjects/tpa-fulkerson/src/headers/caminho.h
 grafo.h
-C:/Users/guzuc/Desktop/tpa-fulkerson/src/headers/grafo.h
-vetor.h
-C:/Users/guzuc/Desktop/tpa-fulkerson/src/headers/vetor.h
+C:/Users/2017122760013/CLionProjects/tpa-fulkerson/src/headers/grafo.h
 
-C:/Users/guzuc/Desktop/tpa-fulkerson/src/headers/caminho.h
+C:/Users/2017122760013/CLionProjects/tpa-fulkerson/src/headers/fulkerson.h
 grafo.h
-C:/Users/guzuc/Desktop/tpa-fulkerson/src/headers/grafo.h
-
-C:/Users/guzuc/Desktop/tpa-fulkerson/src/headers/fulkerson.h
-grafo.h
-C:/Users/guzuc/Desktop/tpa-fulkerson/src/headers/grafo.h
+C:/Users/2017122760013/CLionProjects/tpa-fulkerson/src/headers/grafo.h
 caminho.h
-C:/Users/guzuc/Desktop/tpa-fulkerson/src/headers/caminho.h
+C:/Users/2017122760013/CLionProjects/tpa-fulkerson/src/headers/caminho.h
 
-C:/Users/guzuc/Desktop/tpa-fulkerson/src/headers/grafo.h
+C:/Users/2017122760013/CLionProjects/tpa-fulkerson/src/headers/grafo.h
 stdbool.h
 -
 aresta.h
-C:/Users/guzuc/Desktop/tpa-fulkerson/src/headers/aresta.h
-
-C:/Users/guzuc/Desktop/tpa-fulkerson/src/headers/veiculo.h
-
-C:/Users/guzuc/Desktop/tpa-fulkerson/src/headers/vetor.h
-veiculo.h
-C:/Users/guzuc/Desktop/tpa-fulkerson/src/headers/veiculo.h
-
-C:/Users/guzuc/Desktop/tpa-fulkerson/src/main.c
-stdlib.h
--
-string.h
--
-headers/arquivo.h
-C:/Users/guzuc/Desktop/tpa-fulkerson/src/headers/arquivo.h
-headers/fulkerson.h
-C:/Users/guzuc/Desktop/tpa-fulkerson/src/headers/fulkerson.h
+C:/Users/2017122760013/CLionProjects/tpa-fulkerson/src/headers/aresta.h
 

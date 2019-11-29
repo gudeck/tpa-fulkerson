@@ -12,7 +12,7 @@ bool precisaExpandirCaminho(Caminho *caminho) {
 
 void expandeCaminho(Caminho *caminho) {
     Grafo **novoArray = calloc(caminho->tamanho + 1, sizeof(Grafo *));
-    for (int i = 0; i < caminho->tamanho; ++i) {
+    for (int i = 0; i < caminho->preenchido; ++i) {
         novoArray[i] = caminho->registros[i];
     }
     caminho->registros = novoArray;
@@ -32,7 +32,7 @@ Grafo *___copiaGrafo(Grafo *grafo) {
     Grafo *novoGrafo = criaGrafo();
 
     novoGrafo->fluxoMaximo = grafo->fluxoMaximo;
-    for (int i = 0; i < grafo->tamanho; ++i) {
+    for (int i = 0; i < grafo->preenchido; ++i) {
         inserirGrafo(novoGrafo, grafo->arestas[i]);
     }
 
@@ -41,10 +41,10 @@ Grafo *___copiaGrafo(Grafo *grafo) {
 
 bool ___jaAdicionado(Caminho *caminho, Grafo *grafo) {
     Grafo *grafoAuxiliar;
-    for (int i = 0; i < caminho->tamanho; ++i) {
+    for (int i = 0; i < caminho->preenchido; ++i) {
         grafoAuxiliar = caminho->registros[i];
         if (grafoAuxiliar == NULL) continue;
-        for (int j = 0; j < grafo->tamanho; ++j) {
+        for (int j = 0; j < grafo->preenchido; ++j) {
             if (grafo->arestas[j] != grafoAuxiliar->arestas[j]) return true;
         }
     }
@@ -60,7 +60,7 @@ void inserirCaminho(Caminho *caminho, Grafo *novoRegistro) {
 
 void mostrarCaminho(Caminho *caminho) {
     Grafo *grafoAuxiliar;
-    for (int i = 0; i < caminho->tamanho; ++i) {
+    for (int i = 0; i < caminho->preenchido; ++i) {
         grafoAuxiliar = caminho->registros[i];
         mostrarGrafo(grafoAuxiliar);
     }

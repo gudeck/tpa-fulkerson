@@ -20,7 +20,7 @@ bool precisaExpandirGrafo(Grafo *grafo) {
 
 void expandeGrafo(Grafo *grafo) {
     Aresta **novoArray = calloc(grafo->tamanho + 1, sizeof(Aresta *));
-    for (int i = 0; i < grafo->tamanho; ++i) {
+    for (int i = 0; i < grafo->preenchido; ++i) {
         novoArray[i] = grafo->arestas[i];
     }
     grafo->arestas = novoArray;
@@ -38,7 +38,7 @@ bool precisaEncolherGrafo(Grafo *grafo) {
 
 void encolheGrafo(Grafo *grafo) {
     Aresta **novoArray = calloc(--grafo->tamanho, sizeof(Aresta *));
-    for (int i = 0; i < grafo->tamanho; ++i) {
+    for (int i = 0; i < grafo->preenchido; ++i) {
         novoArray[i] = grafo->arestas[i];
     }
     grafo->arestas = novoArray;
@@ -52,7 +52,7 @@ void removerGrafo(Grafo *grafo) {
 void mostrarGrafo(Grafo *grafo) {
     printf("\n");
     printf("FM: %.0f\n", grafo->fluxoMaximo);
-    for (int i = 0; i < grafo->tamanho; ++i) {
+    for (int i = 0; i < grafo->preenchido; ++i) {
         printf("%s -> %s = D: %.0f F: %.0f\n", grafo->arestas[i]->origem,
                grafo->arestas[i]->destino,
                grafo->arestas[i]->distancia,

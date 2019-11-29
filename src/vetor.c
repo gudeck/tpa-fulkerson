@@ -20,7 +20,7 @@ bool precisaExpandirVetor(Vetor *vetor) {
 
 void expandeVetor(Vetor *vetor) {
     Veiculo **novoArray = calloc(vetor->tamanho + 1, sizeof(Veiculo *));
-    for (int i = 0; i < vetor->tamanho; ++i) {
+    for (int i = 0; i < vetor->preenchido; ++i) {
         novoArray[i] = vetor->registros[i];
     }
     vetor->registros = novoArray;

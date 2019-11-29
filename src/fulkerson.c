@@ -10,7 +10,7 @@
 
 double ___encontrarMenorCapacidade(Grafo *grafo) {
     double menor = INFINITY;
-    for (int i = 0; i < grafo->tamanho; ++i) {
+    for (int i = 0; i < grafo->preenchido; ++i) {
         if (grafo->arestas[i]->fluxoDisponivel < menor) menor = grafo->arestas[i]->fluxoDisponivel;
     }
     return menor;
@@ -19,10 +19,15 @@ double ___encontrarMenorCapacidade(Grafo *grafo) {
 void ___subtrairCapacidades(Grafo *grafo) {
     double menorCapacidade = ___encontrarMenorCapacidade(grafo);
     grafo->fluxoMaximo = menorCapacidade;
-    for (int i = 0; i < grafo->tamanho; ++i) {
+    for (int i = 0; i < grafo->preenchido; ++i) {
         grafo->arestas[i]->fluxoDisponivel -= menorCapacidade;
     }
 }
+
+/*
+ * Fazer recursão para encontrar caminhos
+ * Fazer outra recursão para fazer a subtração dos fluxos
+ */
 
 void
 ___percorreGrafo(Caminho *caminhosPossiveis, Grafo *grafoOriginal, Grafo *grafoResposta, char *origem, char *destino) {
@@ -39,13 +44,14 @@ ___percorreGrafo(Caminho *caminhosPossiveis, Grafo *grafoOriginal, Grafo *grafoR
                 ___percorreGrafo(caminhosPossiveis, grafoOriginal, grafoResposta, arestas[i]->destino, destino);
             }
             removerGrafo(grafoResposta);
+            if (___encontrarMenorCapacidade(grafoResposta) == 0)continue;
         }
     }
 }
 
 Caminho *___limparCaminhos(Caminho *caminhos) {
     Caminho *novoCaminho = criaCaminho();
-    for (int i = 0; i < caminhos->tamanho; ++i) {
+    for (int i = 0; i < caminhos->preenchido; ++i) {
         if (caminhos->registros[i]->fluxoMaximo != 0)
             inserirCaminho(novoCaminho, caminhos->registros[i]);
     }

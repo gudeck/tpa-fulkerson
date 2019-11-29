@@ -13,7 +13,7 @@ int main() {
     Grafo *grafo = preencherGrafo(arquivoDistancias, arquivoFluxos);
     Vetor *veiculos = preencherVeiculos(arquivoVeiculos);
 
-    mostrarCaminho(___buscarCaminhos(grafo, "D", "J"));
+    mostrarCaminho(___buscarCaminhos(grafo, "A", "J"));
 
     return 0;
 }
