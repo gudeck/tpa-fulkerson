@@ -9,7 +9,7 @@ Aresta *criaAresta(char *origem, char *destino, char *distancia, char *fluxoDisp
     Aresta *novaAresta = calloc(1, sizeof(Aresta));
     novaAresta->origem = criaString(origem);
     novaAresta->destino = criaString(destino);
-    novaAresta->distancia = strtod(distancia, NULL);
-    novaAresta->fluxoDisponivel = strtod(fluxoDisponivel, NULL);
+    novaAresta->distancia = strtol(distancia, NULL, 10);
+    novaAresta->fluxoDisponivel = strtol(fluxoDisponivel, NULL, 10);
     return novaAresta;
 }

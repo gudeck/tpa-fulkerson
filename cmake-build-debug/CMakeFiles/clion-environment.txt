@@ -1,4 +1,4 @@
-ToolSet: 5.2 (local)@C:\Users\2017122760013\Desktop\dev_c_cpp\MiniGW
+ToolSet: 5.2 (local)@C:\Users\guzuc\Desktop\dev_c_cpp\MiniGW
 Options: 
 
 Options:

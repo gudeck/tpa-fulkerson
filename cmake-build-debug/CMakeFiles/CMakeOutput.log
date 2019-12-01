@@ -1,6 +1,6 @@
-The system is: Windows - 6.1.7601 - AMD64
+The system is: Windows - 10.0.18362 - AMD64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-Compiler: C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/bin/gcc.exe 
+Compiler: C:/Users/guzuc/Desktop/dev_c_cpp/MiniGW/bin/gcc.exe 
 Build flags: 
 Id flags:  
 
@@ -10,177 +10,176 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
 
-The C compiler identification is GNU, found in "C:/Users/2017122760013/CLionProjects/tpa-fulkerson/cmake-build-debug/CMakeFiles/3.14.5/CompilerIdC/a.exe"
+The C compiler identification is GNU, found in "C:/Users/guzuc/CLionProjects/tpa-fulkerson/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/a.exe"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: C:/Users/2017122760013/CLionProjects/tpa-fulkerson/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/guzuc/CLionProjects/tpa-fulkerson/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/bin/mingw32-make.exe cmTC_abafe/fast 
-C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_abafe.dir\build.make CMakeFiles/cmTC_abafe.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/2017122760013/CLionProjects/tpa-fulkerson/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_abafe.dir/testCCompiler.c.obj
-C:\Users\2017122760013\Desktop\dev_c_cpp\MiniGW\bin\gcc.exe    -o CMakeFiles\cmTC_abafe.dir\testCCompiler.c.obj   -c C:\Users\2017122760013\CLionProjects\tpa-fulkerson\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c
-Linking C executable cmTC_abafe.exe
-C:\Users\2017122760013\Desktop\dev_c_cpp\CLion\bin\cmake\win\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_abafe.dir\link.txt --verbose=1
-C:\Users\2017122760013\Desktop\dev_c_cpp\CLion\bin\cmake\win\bin\cmake.exe -E remove -f CMakeFiles\cmTC_abafe.dir/objects.a
-C:\Users\2017122760013\Desktop\dev_c_cpp\MiniGW\bin\ar.exe cr CMakeFiles\cmTC_abafe.dir/objects.a @CMakeFiles\cmTC_abafe.dir\objects1.rsp
-C:\Users\2017122760013\Desktop\dev_c_cpp\MiniGW\bin\gcc.exe      -Wl,--whole-archive CMakeFiles\cmTC_abafe.dir/objects.a -Wl,--no-whole-archive  -o cmTC_abafe.exe -Wl,--out-implib,libcmTC_abafe.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_abafe.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/2017122760013/CLionProjects/tpa-fulkerson/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command(s):C:/Users/guzuc/Desktop/dev_c_cpp/MiniGW/bin/mingw32-make.exe cmTC_795f8/fast && C:/Users/guzuc/Desktop/dev_c_cpp/MiniGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_795f8.dir\build.make CMakeFiles/cmTC_795f8.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/guzuc/CLionProjects/tpa-fulkerson/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_795f8.dir/testCCompiler.c.obj
+C:\Users\guzuc\Desktop\dev_c_cpp\MiniGW\bin\gcc.exe    -o CMakeFiles\cmTC_795f8.dir\testCCompiler.c.obj   -c C:\Users\guzuc\CLionProjects\tpa-fulkerson\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c
+Linking C executable cmTC_795f8.exe
+C:\Users\guzuc\Desktop\dev_c_cpp\CLion\bin\cmake\win\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_795f8.dir\link.txt --verbose=1
+C:\Users\guzuc\Desktop\dev_c_cpp\CLion\bin\cmake\win\bin\cmake.exe -E remove -f CMakeFiles\cmTC_795f8.dir/objects.a
+C:\Users\guzuc\Desktop\dev_c_cpp\MiniGW\bin\ar.exe cr CMakeFiles\cmTC_795f8.dir/objects.a @CMakeFiles\cmTC_795f8.dir\objects1.rsp
+C:\Users\guzuc\Desktop\dev_c_cpp\MiniGW\bin\gcc.exe      -Wl,--whole-archive CMakeFiles\cmTC_795f8.dir/objects.a -Wl,--no-whole-archive  -o cmTC_795f8.exe -Wl,--out-implib,libcmTC_795f8.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_795f8.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/guzuc/CLionProjects/tpa-fulkerson/cmake-build-debug/CMakeFiles/CMakeTmp'
+
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: C:/Users/2017122760013/CLionProjects/tpa-fulkerson/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/guzuc/CLionProjects/tpa-fulkerson/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/bin/mingw32-make.exe cmTC_71aa7/fast 
-C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_71aa7.dir\build.make CMakeFiles/cmTC_71aa7.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/2017122760013/CLionProjects/tpa-fulkerson/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_71aa7.dir/CMakeCCompilerABI.c.obj
-C:\Users\2017122760013\Desktop\dev_c_cpp\MiniGW\bin\gcc.exe   -v -o CMakeFiles\cmTC_71aa7.dir\CMakeCCompilerABI.c.obj   -c C:\Users\2017122760013\Desktop\dev_c_cpp\CLion\bin\cmake\win\share\cmake-3.14\Modules\CMakeCCompilerABI.c
+Run Build Command(s):C:/Users/guzuc/Desktop/dev_c_cpp/MiniGW/bin/mingw32-make.exe cmTC_7931c/fast && C:/Users/guzuc/Desktop/dev_c_cpp/MiniGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_7931c.dir\build.make CMakeFiles/cmTC_7931c.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/guzuc/CLionProjects/tpa-fulkerson/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7931c.dir/CMakeCCompilerABI.c.obj
+C:\Users\guzuc\Desktop\dev_c_cpp\MiniGW\bin\gcc.exe   -v -o CMakeFiles\cmTC_7931c.dir\CMakeCCompilerABI.c.obj   -c C:\Users\guzuc\Desktop\dev_c_cpp\CLion\bin\cmake\win\share\cmake-3.15\Modules\CMakeCCompilerABI.c
 Using built-in specs.
-COLLECT_GCC=C:\Users\2017122760013\Desktop\dev_c_cpp\MiniGW\bin\gcc.exe
+COLLECT_GCC=C:\Users\guzuc\Desktop\dev_c_cpp\MiniGW\bin\gcc.exe
 Target: mingw32
 Configured with: ../src/gcc-8.2.0/configure --build=x86_64-pc-linux-gnu --host=mingw32 --target=mingw32 --prefix=/mingw --disable-win32-registry --with-arch=i586 --with-tune=generic --enable-languages=c,c++,objc,obj-c++,fortran,ada --with-pkgversion='MinGW.org GCC-8.2.0-3' --with-gmp=/mingw --with-mpfr=/mingw --with-mpc=/mingw --enable-static --enable-shared --enable-threads --with-dwarf2 --disable-sjlj-exceptions --enable-version-specific-runtime-libs --with-libiconv-prefix=/mingw --with-libintl-prefix=/mingw --enable-libstdcxx-debug --with-isl=/mingw --enable-libgomp --disable-libvtv --enable-nls --disable-build-format-warnings
 Thread model: win32
 gcc version 8.2.0 (MinGW.org GCC-8.2.0-3) 
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_71aa7.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i586'
- c:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../libexec/gcc/mingw32/8.2.0/cc1.exe -quiet -v -iprefix c:\users\2017122760013\desktop\dev_c_cpp\minigw\bin\../lib/gcc/mingw32/8.2.0/ C:\Users\2017122760013\Desktop\dev_c_cpp\CLion\bin\cmake\win\share\cmake-3.14\Modules\CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=i586 -auxbase-strip CMakeFiles\cmTC_71aa7.dir\CMakeCCompilerABI.c.obj -version -o C:\Users\201712~2\AppData\Local\Temp\ccR2rQ5a.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_7931c.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i586'
+ c:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../libexec/gcc/mingw32/8.2.0/cc1.exe -quiet -v -iprefix c:\users\guzuc\desktop\dev_c_cpp\minigw\bin\../lib/gcc/mingw32/8.2.0/ C:\Users\guzuc\Desktop\dev_c_cpp\CLion\bin\cmake\win\share\cmake-3.15\Modules\CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=i586 -auxbase-strip CMakeFiles\cmTC_7931c.dir\CMakeCCompilerABI.c.obj -version -o C:\Users\guzuc\AppData\Local\Temp\ccNuDgFT.s
 GNU C17 (MinGW.org GCC-8.2.0-3) version 8.2.0 (mingw32)
 	compiled by GNU C version 8.2.0, GMP version 6.1.2, MPFR version 3.1.5, MPC version 1.0.3, isl version isl-0.18-GMP
 
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-ignoring nonexistent directory "c:\users\2017122760013\desktop\dev_c_cpp\minigw\bin\../lib/gcc/mingw32/8.2.0/../../../../mingw32/include"
-ignoring duplicate directory "c:/users/2017122760013/desktop/dev_c_cpp/minigw/lib/gcc/../../lib/gcc/mingw32/8.2.0/include"
+ignoring nonexistent directory "c:\users\guzuc\desktop\dev_c_cpp\minigw\bin\../lib/gcc/mingw32/8.2.0/../../../../mingw32/include"
+ignoring duplicate directory "c:/users/guzuc/desktop/dev_c_cpp/minigw/lib/gcc/../../lib/gcc/mingw32/8.2.0/include"
 ignoring nonexistent directory "/mingw/include"
-ignoring duplicate directory "c:/users/2017122760013/desktop/dev_c_cpp/minigw/lib/gcc/../../include"
-ignoring duplicate directory "c:/users/2017122760013/desktop/dev_c_cpp/minigw/lib/gcc/../../lib/gcc/mingw32/8.2.0/include-fixed"
-ignoring nonexistent directory "c:/users/2017122760013/desktop/dev_c_cpp/minigw/lib/gcc/../../lib/gcc/mingw32/8.2.0/../../../../mingw32/include"
+ignoring duplicate directory "c:/users/guzuc/desktop/dev_c_cpp/minigw/lib/gcc/../../include"
+ignoring duplicate directory "c:/users/guzuc/desktop/dev_c_cpp/minigw/lib/gcc/../../lib/gcc/mingw32/8.2.0/include-fixed"
+ignoring nonexistent directory "c:/users/guzuc/desktop/dev_c_cpp/minigw/lib/gcc/../../lib/gcc/mingw32/8.2.0/../../../../mingw32/include"
 ignoring nonexistent directory "/mingw/include"
 #include "..." search starts here:
 #include <...> search starts here:
- c:\users\2017122760013\desktop\dev_c_cpp\minigw\bin\../lib/gcc/mingw32/8.2.0/include
- c:\users\2017122760013\desktop\dev_c_cpp\minigw\bin\../lib/gcc/mingw32/8.2.0/../../../../include
- c:\users\2017122760013\desktop\dev_c_cpp\minigw\bin\../lib/gcc/mingw32/8.2.0/include-fixed
+ c:\users\guzuc\desktop\dev_c_cpp\minigw\bin\../lib/gcc/mingw32/8.2.0/include
+ c:\users\guzuc\desktop\dev_c_cpp\minigw\bin\../lib/gcc/mingw32/8.2.0/../../../../include
+ c:\users\guzuc\desktop\dev_c_cpp\minigw\bin\../lib/gcc/mingw32/8.2.0/include-fixed
 End of search list.
 GNU C17 (MinGW.org GCC-8.2.0-3) version 8.2.0 (mingw32)
 	compiled by GNU C version 8.2.0, GMP version 6.1.2, MPFR version 3.1.5, MPC version 1.0.3, isl version isl-0.18-GMP
 
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 Compiler executable checksum: 2ed4e2442a5561a374de0dbb20aab2d7
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_71aa7.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i586'
- c:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/../../../../mingw32/bin/as.exe -v -o CMakeFiles\cmTC_71aa7.dir\CMakeCCompilerABI.c.obj C:\Users\201712~2\AppData\Local\Temp\ccR2rQ5a.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_7931c.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i586'
+ c:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/../../../../mingw32/bin/as.exe -v -o CMakeFiles\cmTC_7931c.dir\CMakeCCompilerABI.c.obj C:\Users\guzuc\AppData\Local\Temp\ccNuDgFT.s
 GNU assembler version 2.32 (mingw32) using BFD version (GNU Binutils) 2.32
-COMPILER_PATH=c:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../libexec/gcc/mingw32/8.2.0/;c:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../libexec/gcc/;c:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/../../../../mingw32/bin/
-LIBRARY_PATH=c:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/;c:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../lib/gcc/;c:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/../../../../mingw32/lib/;c:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/../../../
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_71aa7.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i586'
-Linking C executable cmTC_71aa7.exe
-C:\Users\2017122760013\Desktop\dev_c_cpp\CLion\bin\cmake\win\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_71aa7.dir\link.txt --verbose=1
-C:\Users\2017122760013\Desktop\dev_c_cpp\CLion\bin\cmake\win\bin\cmake.exe -E remove -f CMakeFiles\cmTC_71aa7.dir/objects.a
-C:\Users\2017122760013\Desktop\dev_c_cpp\MiniGW\bin\ar.exe cr CMakeFiles\cmTC_71aa7.dir/objects.a @CMakeFiles\cmTC_71aa7.dir\objects1.rsp
-C:\Users\2017122760013\Desktop\dev_c_cpp\MiniGW\bin\gcc.exe     -v -Wl,--whole-archive CMakeFiles\cmTC_71aa7.dir/objects.a -Wl,--no-whole-archive  -o cmTC_71aa7.exe -Wl,--out-implib,libcmTC_71aa7.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+COMPILER_PATH=c:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../libexec/gcc/mingw32/8.2.0/;c:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../libexec/gcc/;c:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/../../../../mingw32/bin/
+LIBRARY_PATH=c:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/;c:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../lib/gcc/;c:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/../../../../mingw32/lib/;c:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/../../../
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_7931c.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i586'
+Linking C executable cmTC_7931c.exe
+C:\Users\guzuc\Desktop\dev_c_cpp\CLion\bin\cmake\win\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_7931c.dir\link.txt --verbose=1
+C:\Users\guzuc\Desktop\dev_c_cpp\CLion\bin\cmake\win\bin\cmake.exe -E remove -f CMakeFiles\cmTC_7931c.dir/objects.a
+C:\Users\guzuc\Desktop\dev_c_cpp\MiniGW\bin\ar.exe cr CMakeFiles\cmTC_7931c.dir/objects.a @CMakeFiles\cmTC_7931c.dir\objects1.rsp
+C:\Users\guzuc\Desktop\dev_c_cpp\MiniGW\bin\gcc.exe     -v -Wl,--whole-archive CMakeFiles\cmTC_7931c.dir/objects.a -Wl,--no-whole-archive  -o cmTC_7931c.exe -Wl,--out-implib,libcmTC_7931c.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
 Using built-in specs.
-COLLECT_GCC=C:\Users\2017122760013\Desktop\dev_c_cpp\MiniGW\bin\gcc.exe
-COLLECT_LTO_WRAPPER=c:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../libexec/gcc/mingw32/8.2.0/lto-wrapper.exe
+COLLECT_GCC=C:\Users\guzuc\Desktop\dev_c_cpp\MiniGW\bin\gcc.exe
+COLLECT_LTO_WRAPPER=c:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../libexec/gcc/mingw32/8.2.0/lto-wrapper.exe
 Target: mingw32
 Configured with: ../src/gcc-8.2.0/configure --build=x86_64-pc-linux-gnu --host=mingw32 --target=mingw32 --prefix=/mingw --disable-win32-registry --with-arch=i586 --with-tune=generic --enable-languages=c,c++,objc,obj-c++,fortran,ada --with-pkgversion='MinGW.org GCC-8.2.0-3' --with-gmp=/mingw --with-mpfr=/mingw --with-mpc=/mingw --enable-static --enable-shared --enable-threads --with-dwarf2 --disable-sjlj-exceptions --enable-version-specific-runtime-libs --with-libiconv-prefix=/mingw --with-libintl-prefix=/mingw --enable-libstdcxx-debug --with-isl=/mingw --enable-libgomp --disable-libvtv --enable-nls --disable-build-format-warnings
 Thread model: win32
 gcc version 8.2.0 (MinGW.org GCC-8.2.0-3) 
-COMPILER_PATH=c:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../libexec/gcc/mingw32/8.2.0/;c:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../libexec/gcc/;c:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/../../../../mingw32/bin/
-LIBRARY_PATH=c:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/;c:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../lib/gcc/;c:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/../../../../mingw32/lib/;c:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/../../../
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_71aa7.exe' '-mtune=generic' '-march=i586'
- c:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../libexec/gcc/mingw32/8.2.0/collect2.exe -plugin c:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../libexec/gcc/mingw32/8.2.0/liblto_plugin-0.dll -plugin-opt=c:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../libexec/gcc/mingw32/8.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\201712~2\AppData\Local\Temp\cc0mSyps.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -Bdynamic -o cmTC_71aa7.exe c:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/../../../crt2.o c:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/crtbegin.o -Lc:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0 -Lc:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../lib/gcc -Lc:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/../../../../mingw32/lib -Lc:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/../../.. --whole-archive CMakeFiles\cmTC_71aa7.dir/objects.a --no-whole-archive --out-implib libcmTC_71aa7.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt c:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/crtend.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_71aa7.exe' '-mtune=generic' '-march=i586'
-mingw32-make.exe[1]: Leaving directory 'C:/Users/2017122760013/CLionProjects/tpa-fulkerson/cmake-build-debug/CMakeFiles/CMakeTmp'
+COMPILER_PATH=c:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../libexec/gcc/mingw32/8.2.0/;c:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../libexec/gcc/;c:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/../../../../mingw32/bin/
+LIBRARY_PATH=c:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/;c:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../lib/gcc/;c:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/../../../../mingw32/lib/;c:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/../../../
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7931c.exe' '-mtune=generic' '-march=i586'
+ c:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../libexec/gcc/mingw32/8.2.0/collect2.exe -plugin c:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../libexec/gcc/mingw32/8.2.0/liblto_plugin-0.dll -plugin-opt=c:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../libexec/gcc/mingw32/8.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\guzuc\AppData\Local\Temp\cc6n6NSW.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -Bdynamic -o cmTC_7931c.exe c:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/../../../crt2.o c:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/crtbegin.o -Lc:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0 -Lc:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../lib/gcc -Lc:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/../../../../mingw32/lib -Lc:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/../../.. --whole-archive CMakeFiles\cmTC_7931c.dir/objects.a --no-whole-archive --out-implib libcmTC_7931c.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt c:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/crtend.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7931c.exe' '-mtune=generic' '-march=i586'
+mingw32-make.exe[1]: Leaving directory 'C:/Users/guzuc/CLionProjects/tpa-fulkerson/cmake-build-debug/CMakeFiles/CMakeTmp'
+
 
 
 Parsed C implicit include dir info from above output: rv=done
   found start of include info
   found start of implicit include info
-    add: [c:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/include]
-    add: [c:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/../../../../include]
-    add: [c:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/include-fixed]
+    add: [c:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/include]
+    add: [c:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/../../../../include]
+    add: [c:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/include-fixed]
   end of search list found
-  collapse include dir [c:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/include] ==> [C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/lib/gcc/mingw32/8.2.0/include]
-  collapse include dir [c:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/../../../../include] ==> [C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/include]
-  collapse include dir [c:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/include-fixed] ==> [C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/lib/gcc/mingw32/8.2.0/include-fixed]
-  implicit include dirs: [C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/lib/gcc/mingw32/8.2.0/include;C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/include;C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/lib/gcc/mingw32/8.2.0/include-fixed]
+  collapse include dir [c:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/include] ==> [C:/Users/guzuc/Desktop/dev_c_cpp/MiniGW/lib/gcc/mingw32/8.2.0/include]
+  collapse include dir [c:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/../../../../include] ==> [C:/Users/guzuc/Desktop/dev_c_cpp/MiniGW/include]
+  collapse include dir [c:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/include-fixed] ==> [C:/Users/guzuc/Desktop/dev_c_cpp/MiniGW/lib/gcc/mingw32/8.2.0/include-fixed]
+  implicit include dirs: [C:/Users/guzuc/Desktop/dev_c_cpp/MiniGW/lib/gcc/mingw32/8.2.0/include;C:/Users/guzuc/Desktop/dev_c_cpp/MiniGW/include;C:/Users/guzuc/Desktop/dev_c_cpp/MiniGW/lib/gcc/mingw32/8.2.0/include-fixed]
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: C:/Users/2017122760013/CLionProjects/tpa-fulkerson/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: C:/Users/guzuc/CLionProjects/tpa-fulkerson/cmake-build-debug/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/bin/mingw32-make.exe cmTC_71aa7/fast ]
-  ignore line: [C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_71aa7.dir\build.make CMakeFiles/cmTC_71aa7.dir/build]
-  ignore line: [mingw32-make.exe[1]: Entering directory 'C:/Users/2017122760013/CLionProjects/tpa-fulkerson/cmake-build-debug/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_71aa7.dir/CMakeCCompilerABI.c.obj]
-  ignore line: [C:\Users\2017122760013\Desktop\dev_c_cpp\MiniGW\bin\gcc.exe   -v -o CMakeFiles\cmTC_71aa7.dir\CMakeCCompilerABI.c.obj   -c C:\Users\2017122760013\Desktop\dev_c_cpp\CLion\bin\cmake\win\share\cmake-3.14\Modules\CMakeCCompilerABI.c]
+  ignore line: [Run Build Command(s):C:/Users/guzuc/Desktop/dev_c_cpp/MiniGW/bin/mingw32-make.exe cmTC_7931c/fast && C:/Users/guzuc/Desktop/dev_c_cpp/MiniGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_7931c.dir\build.make CMakeFiles/cmTC_7931c.dir/build]
+  ignore line: [mingw32-make.exe[1]: Entering directory 'C:/Users/guzuc/CLionProjects/tpa-fulkerson/cmake-build-debug/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_7931c.dir/CMakeCCompilerABI.c.obj]
+  ignore line: [C:\Users\guzuc\Desktop\dev_c_cpp\MiniGW\bin\gcc.exe   -v -o CMakeFiles\cmTC_7931c.dir\CMakeCCompilerABI.c.obj   -c C:\Users\guzuc\Desktop\dev_c_cpp\CLion\bin\cmake\win\share\cmake-3.15\Modules\CMakeCCompilerABI.c]
   ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=C:\Users\2017122760013\Desktop\dev_c_cpp\MiniGW\bin\gcc.exe]
+  ignore line: [COLLECT_GCC=C:\Users\guzuc\Desktop\dev_c_cpp\MiniGW\bin\gcc.exe]
   ignore line: [Target: mingw32]
   ignore line: [Configured with: ../src/gcc-8.2.0/configure --build=x86_64-pc-linux-gnu --host=mingw32 --target=mingw32 --prefix=/mingw --disable-win32-registry --with-arch=i586 --with-tune=generic --enable-languages=c,c++,objc,obj-c++,fortran,ada --with-pkgversion='MinGW.org GCC-8.2.0-3' --with-gmp=/mingw --with-mpfr=/mingw --with-mpc=/mingw --enable-static --enable-shared --enable-threads --with-dwarf2 --disable-sjlj-exceptions --enable-version-specific-runtime-libs --with-libiconv-prefix=/mingw --with-libintl-prefix=/mingw --enable-libstdcxx-debug --with-isl=/mingw --enable-libgomp --disable-libvtv --enable-nls --disable-build-format-warnings]
   ignore line: [Thread model: win32]
   ignore line: [gcc version 8.2.0 (MinGW.org GCC-8.2.0-3) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_71aa7.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i586']
-  ignore line: [ c:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../libexec/gcc/mingw32/8.2.0/cc1.exe -quiet -v -iprefix c:\users\2017122760013\desktop\dev_c_cpp\minigw\bin\../lib/gcc/mingw32/8.2.0/ C:\Users\2017122760013\Desktop\dev_c_cpp\CLion\bin\cmake\win\share\cmake-3.14\Modules\CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=i586 -auxbase-strip CMakeFiles\cmTC_71aa7.dir\CMakeCCompilerABI.c.obj -version -o C:\Users\201712~2\AppData\Local\Temp\ccR2rQ5a.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_7931c.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i586']
+  ignore line: [ c:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../libexec/gcc/mingw32/8.2.0/cc1.exe -quiet -v -iprefix c:\users\guzuc\desktop\dev_c_cpp\minigw\bin\../lib/gcc/mingw32/8.2.0/ C:\Users\guzuc\Desktop\dev_c_cpp\CLion\bin\cmake\win\share\cmake-3.15\Modules\CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=i586 -auxbase-strip CMakeFiles\cmTC_7931c.dir\CMakeCCompilerABI.c.obj -version -o C:\Users\guzuc\AppData\Local\Temp\ccNuDgFT.s]
   ignore line: [GNU C17 (MinGW.org GCC-8.2.0-3) version 8.2.0 (mingw32)]
   ignore line: [	compiled by GNU C version 8.2.0, GMP version 6.1.2, MPFR version 3.1.5, MPC version 1.0.3, isl version isl-0.18-GMP]
   ignore line: []
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-  ignore line: [ignoring nonexistent directory "c:\users\2017122760013\desktop\dev_c_cpp\minigw\bin\../lib/gcc/mingw32/8.2.0/../../../../mingw32/include"]
-  ignore line: [ignoring duplicate directory "c:/users/2017122760013/desktop/dev_c_cpp/minigw/lib/gcc/../../lib/gcc/mingw32/8.2.0/include"]
+  ignore line: [ignoring nonexistent directory "c:\users\guzuc\desktop\dev_c_cpp\minigw\bin\../lib/gcc/mingw32/8.2.0/../../../../mingw32/include"]
+  ignore line: [ignoring duplicate directory "c:/users/guzuc/desktop/dev_c_cpp/minigw/lib/gcc/../../lib/gcc/mingw32/8.2.0/include"]
   ignore line: [ignoring nonexistent directory "/mingw/include"]
-  ignore line: [ignoring duplicate directory "c:/users/2017122760013/desktop/dev_c_cpp/minigw/lib/gcc/../../include"]
-  ignore line: [ignoring duplicate directory "c:/users/2017122760013/desktop/dev_c_cpp/minigw/lib/gcc/../../lib/gcc/mingw32/8.2.0/include-fixed"]
-  ignore line: [ignoring nonexistent directory "c:/users/2017122760013/desktop/dev_c_cpp/minigw/lib/gcc/../../lib/gcc/mingw32/8.2.0/../../../../mingw32/include"]
+  ignore line: [ignoring duplicate directory "c:/users/guzuc/desktop/dev_c_cpp/minigw/lib/gcc/../../include"]
+  ignore line: [ignoring duplicate directory "c:/users/guzuc/desktop/dev_c_cpp/minigw/lib/gcc/../../lib/gcc/mingw32/8.2.0/include-fixed"]
+  ignore line: [ignoring nonexistent directory "c:/users/guzuc/desktop/dev_c_cpp/minigw/lib/gcc/../../lib/gcc/mingw32/8.2.0/../../../../mingw32/include"]
   ignore line: [ignoring nonexistent directory "/mingw/include"]
   ignore line: [#include "..." search starts here:]
   ignore line: [#include <...> search starts here:]
-  ignore line: [ c:\users\2017122760013\desktop\dev_c_cpp\minigw\bin\../lib/gcc/mingw32/8.2.0/include]
-  ignore line: [ c:\users\2017122760013\desktop\dev_c_cpp\minigw\bin\../lib/gcc/mingw32/8.2.0/../../../../include]
-  ignore line: [ c:\users\2017122760013\desktop\dev_c_cpp\minigw\bin\../lib/gcc/mingw32/8.2.0/include-fixed]
+  ignore line: [ c:\users\guzuc\desktop\dev_c_cpp\minigw\bin\../lib/gcc/mingw32/8.2.0/include]
+  ignore line: [ c:\users\guzuc\desktop\dev_c_cpp\minigw\bin\../lib/gcc/mingw32/8.2.0/../../../../include]
+  ignore line: [ c:\users\guzuc\desktop\dev_c_cpp\minigw\bin\../lib/gcc/mingw32/8.2.0/include-fixed]
   ignore line: [End of search list.]
   ignore line: [GNU C17 (MinGW.org GCC-8.2.0-3) version 8.2.0 (mingw32)]
   ignore line: [	compiled by GNU C version 8.2.0, GMP version 6.1.2, MPFR version 3.1.5, MPC version 1.0.3, isl version isl-0.18-GMP]
   ignore line: []
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
   ignore line: [Compiler executable checksum: 2ed4e2442a5561a374de0dbb20aab2d7]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_71aa7.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i586']
-  ignore line: [ c:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/../../../../mingw32/bin/as.exe -v -o CMakeFiles\cmTC_71aa7.dir\CMakeCCompilerABI.c.obj C:\Users\201712~2\AppData\Local\Temp\ccR2rQ5a.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_7931c.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i586']
+  ignore line: [ c:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/../../../../mingw32/bin/as.exe -v -o CMakeFiles\cmTC_7931c.dir\CMakeCCompilerABI.c.obj C:\Users\guzuc\AppData\Local\Temp\ccNuDgFT.s]
   ignore line: [GNU assembler version 2.32 (mingw32) using BFD version (GNU Binutils) 2.32]
-  ignore line: [COMPILER_PATH=c:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../libexec/gcc/mingw32/8.2.0/]
-  ignore line: [c:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../libexec/gcc/]
-  ignore line: [c:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/../../../../mingw32/bin/]
-  ignore line: [LIBRARY_PATH=c:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/]
-  ignore line: [c:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../lib/gcc/]
-  ignore line: [c:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/../../../../mingw32/lib/]
-  ignore line: [c:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/../../../]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_71aa7.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i586']
-  ignore line: [Linking C executable cmTC_71aa7.exe]
-  ignore line: [C:\Users\2017122760013\Desktop\dev_c_cpp\CLion\bin\cmake\win\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_71aa7.dir\link.txt --verbose=1]
-  ignore line: [C:\Users\2017122760013\Desktop\dev_c_cpp\CLion\bin\cmake\win\bin\cmake.exe -E remove -f CMakeFiles\cmTC_71aa7.dir/objects.a]
-  ignore line: [C:\Users\2017122760013\Desktop\dev_c_cpp\MiniGW\bin\ar.exe cr CMakeFiles\cmTC_71aa7.dir/objects.a @CMakeFiles\cmTC_71aa7.dir\objects1.rsp]
-  ignore line: [C:\Users\2017122760013\Desktop\dev_c_cpp\MiniGW\bin\gcc.exe     -v -Wl,--whole-archive CMakeFiles\cmTC_71aa7.dir/objects.a -Wl,--no-whole-archive  -o cmTC_71aa7.exe -Wl,--out-implib,libcmTC_71aa7.dll.a -Wl,--major-image-version,0,--minor-image-version,0 ]
+  ignore line: [COMPILER_PATH=c:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../libexec/gcc/mingw32/8.2.0/]
+  ignore line: [c:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../libexec/gcc/]
+  ignore line: [c:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/../../../../mingw32/bin/]
+  ignore line: [LIBRARY_PATH=c:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/]
+  ignore line: [c:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../lib/gcc/]
+  ignore line: [c:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/../../../../mingw32/lib/]
+  ignore line: [c:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/../../../]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_7931c.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i586']
+  ignore line: [Linking C executable cmTC_7931c.exe]
+  ignore line: [C:\Users\guzuc\Desktop\dev_c_cpp\CLion\bin\cmake\win\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_7931c.dir\link.txt --verbose=1]
+  ignore line: [C:\Users\guzuc\Desktop\dev_c_cpp\CLion\bin\cmake\win\bin\cmake.exe -E remove -f CMakeFiles\cmTC_7931c.dir/objects.a]
+  ignore line: [C:\Users\guzuc\Desktop\dev_c_cpp\MiniGW\bin\ar.exe cr CMakeFiles\cmTC_7931c.dir/objects.a @CMakeFiles\cmTC_7931c.dir\objects1.rsp]
+  ignore line: [C:\Users\guzuc\Desktop\dev_c_cpp\MiniGW\bin\gcc.exe     -v -Wl,--whole-archive CMakeFiles\cmTC_7931c.dir/objects.a -Wl,--no-whole-archive  -o cmTC_7931c.exe -Wl,--out-implib,libcmTC_7931c.dll.a -Wl,--major-image-version,0,--minor-image-version,0 ]
   ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=C:\Users\2017122760013\Desktop\dev_c_cpp\MiniGW\bin\gcc.exe]
-  ignore line: [COLLECT_LTO_WRAPPER=c:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../libexec/gcc/mingw32/8.2.0/lto-wrapper.exe]
+  ignore line: [COLLECT_GCC=C:\Users\guzuc\Desktop\dev_c_cpp\MiniGW\bin\gcc.exe]
+  ignore line: [COLLECT_LTO_WRAPPER=c:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../libexec/gcc/mingw32/8.2.0/lto-wrapper.exe]
   ignore line: [Target: mingw32]
   ignore line: [Configured with: ../src/gcc-8.2.0/configure --build=x86_64-pc-linux-gnu --host=mingw32 --target=mingw32 --prefix=/mingw --disable-win32-registry --with-arch=i586 --with-tune=generic --enable-languages=c,c++,objc,obj-c++,fortran,ada --with-pkgversion='MinGW.org GCC-8.2.0-3' --with-gmp=/mingw --with-mpfr=/mingw --with-mpc=/mingw --enable-static --enable-shared --enable-threads --with-dwarf2 --disable-sjlj-exceptions --enable-version-specific-runtime-libs --with-libiconv-prefix=/mingw --with-libintl-prefix=/mingw --enable-libstdcxx-debug --with-isl=/mingw --enable-libgomp --disable-libvtv --enable-nls --disable-build-format-warnings]
   ignore line: [Thread model: win32]
   ignore line: [gcc version 8.2.0 (MinGW.org GCC-8.2.0-3) ]
-  ignore line: [COMPILER_PATH=c:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../libexec/gcc/mingw32/8.2.0/]
-  ignore line: [c:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../libexec/gcc/]
-  ignore line: [c:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/../../../../mingw32/bin/]
-  ignore line: [LIBRARY_PATH=c:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/]
-  ignore line: [c:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../lib/gcc/]
-  ignore line: [c:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/../../../../mingw32/lib/]
-  ignore line: [c:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/../../../]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_71aa7.exe' '-mtune=generic' '-march=i586']
-  link line: [ c:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../libexec/gcc/mingw32/8.2.0/collect2.exe -plugin c:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../libexec/gcc/mingw32/8.2.0/liblto_plugin-0.dll -plugin-opt=c:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../libexec/gcc/mingw32/8.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\201712~2\AppData\Local\Temp\cc0mSyps.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -Bdynamic -o cmTC_71aa7.exe c:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/../../../crt2.o c:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/crtbegin.o -Lc:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0 -Lc:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../lib/gcc -Lc:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/../../../../mingw32/lib -Lc:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/../../.. --whole-archive CMakeFiles\cmTC_71aa7.dir/objects.a --no-whole-archive --out-implib libcmTC_71aa7.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt c:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/crtend.o]
-    arg [c:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../libexec/gcc/mingw32/8.2.0/collect2.exe] ==> ignore
+  ignore line: [COMPILER_PATH=c:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../libexec/gcc/mingw32/8.2.0/]
+  ignore line: [c:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../libexec/gcc/]
+  ignore line: [c:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/../../../../mingw32/bin/]
+  ignore line: [LIBRARY_PATH=c:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/]
+  ignore line: [c:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../lib/gcc/]
+  ignore line: [c:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/../../../../mingw32/lib/]
+  ignore line: [c:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/../../../]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7931c.exe' '-mtune=generic' '-march=i586']
+  link line: [ c:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../libexec/gcc/mingw32/8.2.0/collect2.exe -plugin c:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../libexec/gcc/mingw32/8.2.0/liblto_plugin-0.dll -plugin-opt=c:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../libexec/gcc/mingw32/8.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\guzuc\AppData\Local\Temp\cc6n6NSW.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -Bdynamic -o cmTC_7931c.exe c:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/../../../crt2.o c:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/crtbegin.o -Lc:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0 -Lc:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../lib/gcc -Lc:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/../../../../mingw32/lib -Lc:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/../../.. --whole-archive CMakeFiles\cmTC_7931c.dir/objects.a --no-whole-archive --out-implib libcmTC_7931c.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt c:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/crtend.o]
+    arg [c:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../libexec/gcc/mingw32/8.2.0/collect2.exe] ==> ignore
     arg [-plugin] ==> ignore
-    arg [c:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../libexec/gcc/mingw32/8.2.0/liblto_plugin-0.dll] ==> ignore
-    arg [-plugin-opt=c:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../libexec/gcc/mingw32/8.2.0/lto-wrapper.exe] ==> ignore
-    arg [-plugin-opt=-fresolution=C:\Users\201712~2\AppData\Local\Temp\cc0mSyps.res] ==> ignore
+    arg [c:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../libexec/gcc/mingw32/8.2.0/liblto_plugin-0.dll] ==> ignore
+    arg [-plugin-opt=c:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../libexec/gcc/mingw32/8.2.0/lto-wrapper.exe] ==> ignore
+    arg [-plugin-opt=-fresolution=C:\Users\guzuc\AppData\Local\Temp\cc6n6NSW.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_eh] ==> ignore
@@ -199,18 +198,18 @@ Parsed C implicit link information from above output:
     arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
     arg [-Bdynamic] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_71aa7.exe] ==> ignore
-    arg [c:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/../../../crt2.o] ==> ignore
-    arg [c:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/crtbegin.o] ==> ignore
-    arg [-Lc:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0] ==> dir [c:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0]
-    arg [-Lc:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../lib/gcc] ==> dir [c:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../lib/gcc]
-    arg [-Lc:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/../../../../mingw32/lib] ==> dir [c:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/../../../../mingw32/lib]
-    arg [-Lc:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/../../..] ==> dir [c:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/../../..]
+    arg [cmTC_7931c.exe] ==> ignore
+    arg [c:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/../../../crt2.o] ==> ignore
+    arg [c:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/crtbegin.o] ==> ignore
+    arg [-Lc:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0] ==> dir [c:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0]
+    arg [-Lc:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../lib/gcc] ==> dir [c:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../lib/gcc]
+    arg [-Lc:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/../../../../mingw32/lib] ==> dir [c:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/../../../../mingw32/lib]
+    arg [-Lc:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/../../..] ==> dir [c:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/../../..]
     arg [--whole-archive] ==> ignore
-    arg [CMakeFiles\cmTC_71aa7.dir/objects.a] ==> ignore
+    arg [CMakeFiles\cmTC_7931c.dir/objects.a] ==> ignore
     arg [--no-whole-archive] ==> ignore
     arg [--out-implib] ==> ignore
-    arg [libcmTC_71aa7.dll.a] ==> ignore
+    arg [libcmTC_7931c.dll.a] ==> ignore
     arg [--major-image-version] ==> ignore
     arg [0] ==> ignore
     arg [--minor-image-version] ==> ignore
@@ -231,83 +230,17 @@ Parsed C implicit link information from above output:
     arg [-lmoldname] ==> lib [moldname]
     arg [-lmingwex] ==> lib [mingwex]
     arg [-lmsvcrt] ==> lib [msvcrt]
-    arg [c:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/crtend.o] ==> ignore
+    arg [c:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/crtend.o] ==> ignore
   remove lib [gcc_eh]
   remove lib [msvcrt]
   remove lib [gcc_eh]
   remove lib [msvcrt]
-  collapse library dir [c:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0] ==> [C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/lib/gcc/mingw32/8.2.0]
-  collapse library dir [c:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../lib/gcc] ==> [C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/lib/gcc]
-  collapse library dir [c:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/../../../../mingw32/lib] ==> [C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/mingw32/lib]
-  collapse library dir [c:/users/2017122760013/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/../../..] ==> [C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/lib]
+  collapse library dir [c:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0] ==> [C:/Users/guzuc/Desktop/dev_c_cpp/MiniGW/lib/gcc/mingw32/8.2.0]
+  collapse library dir [c:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../lib/gcc] ==> [C:/Users/guzuc/Desktop/dev_c_cpp/MiniGW/lib/gcc]
+  collapse library dir [c:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/../../../../mingw32/lib] ==> [C:/Users/guzuc/Desktop/dev_c_cpp/MiniGW/mingw32/lib]
+  collapse library dir [c:/users/guzuc/desktop/dev_c_cpp/minigw/bin/../lib/gcc/mingw32/8.2.0/../../..] ==> [C:/Users/guzuc/Desktop/dev_c_cpp/MiniGW/lib]
   implicit libs: [mingw32;gcc;moldname;mingwex;advapi32;shell32;user32;kernel32;mingw32;gcc;moldname;mingwex]
-  implicit dirs: [C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/lib/gcc/mingw32/8.2.0;C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/lib/gcc;C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/mingw32/lib;C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/lib]
+  implicit dirs: [C:/Users/guzuc/Desktop/dev_c_cpp/MiniGW/lib/gcc/mingw32/8.2.0;C:/Users/guzuc/Desktop/dev_c_cpp/MiniGW/lib/gcc;C:/Users/guzuc/Desktop/dev_c_cpp/MiniGW/mingw32/lib;C:/Users/guzuc/Desktop/dev_c_cpp/MiniGW/lib]
   implicit fwks: []
 
 
-
-
-Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: C:/Users/2017122760013/CLionProjects/tpa-fulkerson/cmake-build-debug/CMakeFiles/CMakeTmp
-
-Run Build Command(s):C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/bin/mingw32-make.exe cmTC_800f2/fast 
-C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_800f2.dir\build.make CMakeFiles/cmTC_800f2.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/2017122760013/CLionProjects/tpa-fulkerson/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_800f2.dir/feature_tests.c.obj
-C:\Users\2017122760013\Desktop\dev_c_cpp\MiniGW\bin\gcc.exe   -std=c11 -o CMakeFiles\cmTC_800f2.dir\feature_tests.c.obj   -c C:\Users\2017122760013\CLionProjects\tpa-fulkerson\cmake-build-debug\CMakeFiles\feature_tests.c
-Linking C executable cmTC_800f2.exe
-C:\Users\2017122760013\Desktop\dev_c_cpp\CLion\bin\cmake\win\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_800f2.dir\link.txt --verbose=1
-C:\Users\2017122760013\Desktop\dev_c_cpp\CLion\bin\cmake\win\bin\cmake.exe -E remove -f CMakeFiles\cmTC_800f2.dir/objects.a
-C:\Users\2017122760013\Desktop\dev_c_cpp\MiniGW\bin\ar.exe cr CMakeFiles\cmTC_800f2.dir/objects.a @CMakeFiles\cmTC_800f2.dir\objects1.rsp
-C:\Users\2017122760013\Desktop\dev_c_cpp\MiniGW\bin\gcc.exe      -Wl,--whole-archive CMakeFiles\cmTC_800f2.dir/objects.a -Wl,--no-whole-archive  -o cmTC_800f2.exe -Wl,--out-implib,libcmTC_800f2.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_800f2.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/2017122760013/CLionProjects/tpa-fulkerson/cmake-build-debug/CMakeFiles/CMakeTmp'
-
-
-    Feature record: C_FEATURE:1c_function_prototypes
-    Feature record: C_FEATURE:1c_restrict
-    Feature record: C_FEATURE:1c_static_assert
-    Feature record: C_FEATURE:1c_variadic_macros
-
-
-Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: C:/Users/2017122760013/CLionProjects/tpa-fulkerson/cmake-build-debug/CMakeFiles/CMakeTmp
-
-Run Build Command(s):C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/bin/mingw32-make.exe cmTC_e1be5/fast 
-C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_e1be5.dir\build.make CMakeFiles/cmTC_e1be5.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/2017122760013/CLionProjects/tpa-fulkerson/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_e1be5.dir/feature_tests.c.obj
-C:\Users\2017122760013\Desktop\dev_c_cpp\MiniGW\bin\gcc.exe   -std=c99 -o CMakeFiles\cmTC_e1be5.dir\feature_tests.c.obj   -c C:\Users\2017122760013\CLionProjects\tpa-fulkerson\cmake-build-debug\CMakeFiles\feature_tests.c
-Linking C executable cmTC_e1be5.exe
-C:\Users\2017122760013\Desktop\dev_c_cpp\CLion\bin\cmake\win\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_e1be5.dir\link.txt --verbose=1
-C:\Users\2017122760013\Desktop\dev_c_cpp\CLion\bin\cmake\win\bin\cmake.exe -E remove -f CMakeFiles\cmTC_e1be5.dir/objects.a
-C:\Users\2017122760013\Desktop\dev_c_cpp\MiniGW\bin\ar.exe cr CMakeFiles\cmTC_e1be5.dir/objects.a @CMakeFiles\cmTC_e1be5.dir\objects1.rsp
-C:\Users\2017122760013\Desktop\dev_c_cpp\MiniGW\bin\gcc.exe      -Wl,--whole-archive CMakeFiles\cmTC_e1be5.dir/objects.a -Wl,--no-whole-archive  -o cmTC_e1be5.exe -Wl,--out-implib,libcmTC_e1be5.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_e1be5.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/2017122760013/CLionProjects/tpa-fulkerson/cmake-build-debug/CMakeFiles/CMakeTmp'
-
-
-    Feature record: C_FEATURE:1c_function_prototypes
-    Feature record: C_FEATURE:1c_restrict
-    Feature record: C_FEATURE:0c_static_assert
-    Feature record: C_FEATURE:1c_variadic_macros
-
-
-Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: C:/Users/2017122760013/CLionProjects/tpa-fulkerson/cmake-build-debug/CMakeFiles/CMakeTmp
-
-Run Build Command(s):C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/bin/mingw32-make.exe cmTC_f1452/fast 
-C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_f1452.dir\build.make CMakeFiles/cmTC_f1452.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/2017122760013/CLionProjects/tpa-fulkerson/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_f1452.dir/feature_tests.c.obj
-C:\Users\2017122760013\Desktop\dev_c_cpp\MiniGW\bin\gcc.exe   -std=c90 -o CMakeFiles\cmTC_f1452.dir\feature_tests.c.obj   -c C:\Users\2017122760013\CLionProjects\tpa-fulkerson\cmake-build-debug\CMakeFiles\feature_tests.c
-Linking C executable cmTC_f1452.exe
-C:\Users\2017122760013\Desktop\dev_c_cpp\CLion\bin\cmake\win\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_f1452.dir\link.txt --verbose=1
-C:\Users\2017122760013\Desktop\dev_c_cpp\CLion\bin\cmake\win\bin\cmake.exe -E remove -f CMakeFiles\cmTC_f1452.dir/objects.a
-C:\Users\2017122760013\Desktop\dev_c_cpp\MiniGW\bin\ar.exe cr CMakeFiles\cmTC_f1452.dir/objects.a @CMakeFiles\cmTC_f1452.dir\objects1.rsp
-C:\Users\2017122760013\Desktop\dev_c_cpp\MiniGW\bin\gcc.exe      -Wl,--whole-archive CMakeFiles\cmTC_f1452.dir/objects.a -Wl,--no-whole-archive  -o cmTC_f1452.exe -Wl,--out-implib,libcmTC_f1452.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_f1452.dir\linklibs.rsp
-mingw32-make.exe[1]: Leaving directory 'C:/Users/2017122760013/CLionProjects/tpa-fulkerson/cmake-build-debug/CMakeFiles/CMakeTmp'
-
-
-    Feature record: C_FEATURE:1c_function_prototypes
-    Feature record: C_FEATURE:0c_restrict
-    Feature record: C_FEATURE:0c_static_assert
-    Feature record: C_FEATURE:0c_variadic_macros

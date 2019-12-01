@@ -17,4 +17,6 @@ Vetor *criaVetor();
 
 void inserirVetor(Vetor *vetor, Veiculo *novoRegistro);
 
+void mostrarVeiculos(Vetor *veiculos);
+
 #endif //TPA_FULKERSON_VETOR_H

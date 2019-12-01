@@ -12,8 +12,10 @@ int main() {
     FILE *arquivoVeiculos = fopen("../veiculos.txt", "r");
     Grafo *grafo = preencherGrafo(arquivoDistancias, arquivoFluxos);
     Vetor *veiculos = preencherVeiculos(arquivoVeiculos);
-
-    mostrarCaminho(___buscarCaminhos(grafo, "A", "J"));
+    Caminho *caminhos = fordFulkerson(grafo, "A", "J");
+    alocarVeiculos(caminhos, veiculos);
+    mostrarVeiculos(veiculos);
+    mostrarCaminho(caminhos);
 
     return 0;
 }

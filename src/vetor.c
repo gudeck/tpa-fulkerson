@@ -4,6 +4,7 @@
 
 #include <stdbool.h>
 #include <stdlib.h>
+#include <stdio.h>
 #include "headers/vetor.h"
 
 Vetor *criaVetor() {
@@ -30,4 +31,11 @@ void expandeVetor(Vetor *vetor) {
 void inserirVetor(Vetor *vetor, Veiculo *novoRegistro) {
     if (precisaExpandirVetor(vetor)) expandeVetor(vetor);
     vetor->registros[vetor->preenchido++] = novoRegistro;
+}
+
+void mostrarVeiculos(Vetor *veiculos) {
+    for (int i = 0; i < veiculos->preenchido; ++i) {
+        printf("P:%s C:%d A:%d\n", veiculos->registros[i]->placa, veiculos->registros[i]->capacidade,
+               veiculos->registros[i]->alocado);
+    }
 }

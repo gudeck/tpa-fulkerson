@@ -3,7 +3,6 @@
 //
 
 #include <stdlib.h>
-#include <stdio.h>
 #include "headers/caminho.h"
 
 bool precisaExpandirCaminho(Caminho *caminho) {
@@ -28,33 +27,9 @@ Caminho *criaCaminho() {
     return novoCaminho;
 }
 
-Grafo *___copiaGrafo(Grafo *grafo) {
-    Grafo *novoGrafo = criaGrafo();
-
-    novoGrafo->fluxoMaximo = grafo->fluxoMaximo;
-    for (int i = 0; i < grafo->preenchido; ++i) {
-        inserirGrafo(novoGrafo, grafo->arestas[i]);
-    }
-
-    return novoGrafo;
-}
-
-bool ___jaAdicionado(Caminho *caminho, Grafo *grafo) {
-    Grafo *grafoAuxiliar;
-    for (int i = 0; i < caminho->preenchido; ++i) {
-        grafoAuxiliar = caminho->registros[i];
-        if (grafoAuxiliar == NULL) continue;
-        for (int j = 0; j < grafo->preenchido; ++j) {
-            if (grafo->arestas[j] != grafoAuxiliar->arestas[j]) return true;
-        }
-    }
-    return false;
-}
-
 void inserirCaminho(Caminho *caminho, Grafo *novoRegistro) {
     if (precisaExpandirCaminho(caminho)) expandeCaminho(caminho);
-//    if (!___jaAdicionado(caminho, novoRegistro))
-    caminho->registros[caminho->preenchido++] = ___copiaGrafo(novoRegistro);
+    caminho->registros[caminho->preenchido++] = novoRegistro;
     caminho->fluxoMaximo += novoRegistro->fluxoMaximo;
 }
 

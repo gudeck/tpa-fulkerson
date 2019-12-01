@@ -51,33 +51,14 @@ void removerGrafo(Grafo *grafo) {
 
 void mostrarGrafo(Grafo *grafo) {
     printf("\n");
-    printf("FM: %.0f\n", grafo->fluxoMaximo);
+    grafo->veiculoAlocado == NULL ?
+    printf("FM: %d\n", grafo->fluxoMaximo) :
+    printf("FM: %d VA: %s %d\n", grafo->fluxoMaximo, grafo->veiculoAlocado->placa, grafo->veiculoAlocado->capacidade);
     for (int i = 0; i < grafo->preenchido; ++i) {
-        printf("%s -> %s = D: %.0f F: %.0f\n", grafo->arestas[i]->origem,
+        printf("%s -> %s = D: %d F: %d\n", grafo->arestas[i]->origem,
                grafo->arestas[i]->destino,
                grafo->arestas[i]->distancia,
                grafo->arestas[i]->fluxoDisponivel);
     }
     printf("\n");
-}
-
-void swap(Grafo *grafo, int menor, int maior) {
-    Aresta *aux = grafo->arestas[menor];
-    grafo->arestas[menor] = grafo->arestas[maior];
-    grafo->arestas[maior] = aux;
-}
-
-void ___bubbleSort(Grafo *grafo, bool (*verificacao)(Grafo *, int)) {
-    int limite = grafo->tamanho - 1;
-    int novoLimite;
-    while (limite != -1) {
-        novoLimite = -1;
-        for (int i = 0; i != limite; i++) {
-            if (verificacao(grafo, i)) {
-                swap(grafo, i, i + 1);
-                novoLimite = i;
-            }
-        }
-        limite = novoLimite;
-    }
 }

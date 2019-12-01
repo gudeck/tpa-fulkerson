@@ -6,11 +6,13 @@
 
 #include <stdbool.h>
 #include "aresta.h"
+#include "veiculo.h"
 
 typedef struct ___grafo {
     int tamanho;
     int preenchido;
-    double fluxoMaximo;
+    int fluxoMaximo;
+    Veiculo *veiculoAlocado;
     Aresta **arestas;
 } Grafo;
 
@@ -21,7 +23,5 @@ void inserirGrafo(Grafo *grafo, Aresta *novaAresta);
 void removerGrafo(Grafo *grafo);
 
 void mostrarGrafo(Grafo *grafo);
-
-void ___bubbleSort(Grafo *grafo, bool (*verificacao)(Grafo *, int));
 
 #endif //TPA_DIJKSTRA_VETOR_H

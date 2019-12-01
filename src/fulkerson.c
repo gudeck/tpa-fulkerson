@@ -3,13 +3,11 @@
 //
 
 #include <string.h>
-#include <stdio.h>
-#include <math.h>
+#include <limits.h>
 #include "headers/fulkerson.h"
-#include "headers/caminho.h"
 
-double ___encontrarMenorCapacidade(Grafo *grafo) {
-    double menor = INFINITY;
+int ___encontrarMenorCapacidade(Grafo *grafo) {
+    int menor = INT_MAX;
     for (int i = 0; i < grafo->preenchido; ++i) {
         if (grafo->arestas[i]->fluxoDisponivel < menor) menor = grafo->arestas[i]->fluxoDisponivel;
     }
@@ -17,20 +15,14 @@ double ___encontrarMenorCapacidade(Grafo *grafo) {
 }
 
 void ___subtrairCapacidades(Grafo *grafo) {
-    double menorCapacidade = ___encontrarMenorCapacidade(grafo);
+    int menorCapacidade = ___encontrarMenorCapacidade(grafo);
     grafo->fluxoMaximo = menorCapacidade;
     for (int i = 0; i < grafo->preenchido; ++i) {
         grafo->arestas[i]->fluxoDisponivel -= menorCapacidade;
     }
 }
 
-/*
- * Fazer recursão para encontrar caminhos
- * Fazer outra recursão para fazer a subtração dos fluxos
- */
-
-void
-___percorreGrafo(Caminho *caminhosPossiveis, Grafo *grafoOriginal, Grafo *grafoResposta, char *origem, char *destino) {
+Grafo *___percorreGrafo(Grafo *grafoOriginal, Grafo *grafoResposta, char *origem, char *destino) {
     Aresta **arestas = grafoOriginal->arestas;
     int tamanho = grafoOriginal->tamanho;
     for (int i = 0; i < tamanho; ++i) {
@@ -38,29 +30,48 @@ ___percorreGrafo(Caminho *caminhosPossiveis, Grafo *grafoOriginal, Grafo *grafoR
             if (arestas[i]->fluxoDisponivel == 0) continue;
             inserirGrafo(grafoResposta, arestas[i]);
             if (strcmp(arestas[i]->destino, destino) == 0) {
-                ___subtrairCapacidades(grafoResposta);
-                inserirCaminho(caminhosPossiveis, grafoResposta);
+                return grafoResposta;
             } else {
-                ___percorreGrafo(caminhosPossiveis, grafoOriginal, grafoResposta, arestas[i]->destino, destino);
+                ___percorreGrafo(grafoOriginal, grafoResposta, arestas[i]->destino, destino);
             }
+            if (strcmp(grafoResposta->arestas[grafoResposta->preenchido - 1]->destino, destino) == 0)
+                return grafoResposta;
             removerGrafo(grafoResposta);
-            if (___encontrarMenorCapacidade(grafoResposta) == 0)continue;
         }
     }
+    return NULL;
 }
 
-Caminho *___limparCaminhos(Caminho *caminhos) {
-    Caminho *novoCaminho = criaCaminho();
-    for (int i = 0; i < caminhos->preenchido; ++i) {
-        if (caminhos->registros[i]->fluxoMaximo != 0)
-            inserirCaminho(novoCaminho, caminhos->registros[i]);
-    }
-    return novoCaminho;
-}
-
-Caminho *___buscarCaminhos(Grafo *grafo, char *origem, char *destino) {
+Caminho *fordFulkerson(Grafo *grafo, char *origem, char *destino) {
     Caminho *caminhosPossiveis = criaCaminho();
     Grafo *grafoResposta = criaGrafo();
-    ___percorreGrafo(caminhosPossiveis, grafo, grafoResposta, origem, destino);
-    return ___limparCaminhos(caminhosPossiveis);
+    while ((grafoResposta = ___percorreGrafo(grafo, grafoResposta, origem, destino)) != NULL) {
+        ___subtrairCapacidades(grafoResposta);
+        inserirCaminho(caminhosPossiveis, grafoResposta);
+        grafoResposta = criaGrafo();
+    }
+    return caminhosPossiveis;
+}
+
+Veiculo *___buscarVeiculo(Vetor *veiculos, int fluxoGrafo) {
+    Veiculo *veiculoIdeal = criaVeiculo("A", "2147483647");
+    for (int i = 0; i < veiculos->preenchido; ++i) {
+        if (!veiculos->registros[i]->alocado) {
+            if (veiculos->registros[i]->capacidade >= fluxoGrafo &&
+                veiculos->registros[i]->capacidade < veiculoIdeal->capacidade) {
+                veiculoIdeal = veiculos->registros[i];
+            }
+        }
+    }
+    if (veiculoIdeal->capacidade != -1)
+        veiculoIdeal->alocado = true;
+    else
+        veiculoIdeal = NULL;
+    return veiculoIdeal;
+}
+
+void alocarVeiculos(Caminho *caminhos, Vetor *veiculos) {
+    for (int i = 0; i < caminhos->preenchido; ++i) {
+        caminhos->registros[i]->veiculoAlocado = ___buscarVeiculo(veiculos, caminhos->registros[i]->fluxoMaximo);
+    }
 }

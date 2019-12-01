@@ -9,8 +9,8 @@
 typedef struct ___aresta {
     char *origem;
     char *destino;
-    double distancia;
-    double fluxoDisponivel;
+    int distancia;
+    int fluxoDisponivel;
 } Aresta;
 
 Aresta *criaAresta(char *origem, char *destino, char *distancia, char *fluxoDisponivel);

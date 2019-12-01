@@ -53,6 +53,27 @@ Grafo *___preencherDistancias(FILE *arquivo) {
     return novoGrafo;
 }
 
+void swapGrafo(Grafo *grafo, int menor, int maior) {
+    Aresta *aux = grafo->arestas[menor];
+    grafo->arestas[menor] = grafo->arestas[maior];
+    grafo->arestas[maior] = aux;
+}
+
+void ___bubbleSortGrafo(Grafo *grafo, bool (*verificacao)(Grafo *, int)) {
+    int limite = grafo->tamanho - 1;
+    int novoLimite;
+    while (limite != -1) {
+        novoLimite = -1;
+        for (int i = 0; i != limite; i++) {
+            if (verificacao(grafo, i)) {
+                swapGrafo(grafo, i, i + 1);
+                novoLimite = i;
+            }
+        }
+        limite = novoLimite;
+    }
+}
+
 Grafo *___preencherFluxos(FILE *arquivoDistancias, FILE *arquivoFluxos) {
     char linha[999];
     char *fluxo;
@@ -62,11 +83,11 @@ Grafo *___preencherFluxos(FILE *arquivoDistancias, FILE *arquivoFluxos) {
         strtok(linha, ";");
         for (int j = 0; (fluxo = strtok(NULL, ";")); j++) {
             if (strcmp(fluxo, "0") == 0 || strcmp(fluxo, "0\n") == 0) continue;
-            grafoDistancias->arestas[indice++]->fluxoDisponivel = strtod(fluxo, NULL);
+            grafoDistancias->arestas[indice++]->fluxoDisponivel = strtol(fluxo, NULL, 10);
         }
     }
-    ___bubbleSort(grafoDistancias, verificacaoDestino);
-    ___bubbleSort(grafoDistancias, verificacaoOrigem);
+    ___bubbleSortGrafo(grafoDistancias, verificacaoDestino);
+    ___bubbleSortGrafo(grafoDistancias, verificacaoOrigem);
     return grafoDistancias;
 }
 
@@ -84,7 +105,8 @@ Vetor *___preencherVeiculos(FILE *arquivo) {
     fgets(linha, 999, arquivo);
     for (int i = 0; fgets(linha, 999, arquivo); i++) {
         placa = strtok(linha, ";");
-        capacidade = strtok(NULL, ";");
+        capacidade = strtok(NULL, "\n");
+//        printf("%s %s\n", placa, capacidade);
         inserirVetor(novoVetor, criaVeiculo(placa, capacidade));
     }
     return novoVetor;
@@ -92,6 +114,7 @@ Vetor *___preencherVeiculos(FILE *arquivo) {
 
 Vetor *preencherVeiculos(FILE *arquivoVeiculos) {
     verificaArquivo(arquivoVeiculos);
-    return ___preencherVeiculos(arquivoVeiculos);
+    Vetor *veiculos = ___preencherVeiculos(arquivoVeiculos);
+    return veiculos;
 }
 

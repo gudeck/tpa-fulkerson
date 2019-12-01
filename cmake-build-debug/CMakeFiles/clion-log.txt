@@ -1,11 +1,11 @@
-C:\Users\2017122760013\Desktop\dev_c_cpp\CLion\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\2017122760013\CLionProjects\tpa-fulkerson
+C:\Users\guzuc\Desktop\dev_c_cpp\CLion\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\guzuc\CLionProjects\tpa-fulkerson
 -- The C compiler identification is GNU 8.2.0
--- Check for working C compiler: C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/bin/gcc.exe
--- Check for working C compiler: C:/Users/2017122760013/Desktop/dev_c_cpp/MiniGW/bin/gcc.exe -- works
+-- Check for working C compiler: C:/Users/guzuc/Desktop/dev_c_cpp/MiniGW/bin/gcc.exe
+-- Check for working C compiler: C:/Users/guzuc/Desktop/dev_c_cpp/MiniGW/bin/gcc.exe -- works
 -- Detecting C compiler ABI info
 -- Detecting C compiler ABI info - done
 -- Detecting C compile features
 -- Detecting C compile features - done
 -- Configuring done
 -- Generating done
--- Build files have been written to: C:/Users/2017122760013/CLionProjects/tpa-fulkerson/cmake-build-debug
+-- Build files have been written to: C:/Users/guzuc/CLionProjects/tpa-fulkerson/cmake-build-debug

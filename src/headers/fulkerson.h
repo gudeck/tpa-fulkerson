@@ -7,7 +7,10 @@
 
 #include "grafo.h"
 #include "caminho.h"
+#include "vetor.h"
 
-Caminho *___buscarCaminhos(Grafo *grafo, char *origem, char *destino);
+Caminho *fordFulkerson(Grafo *grafo, char *origem, char *destino);
+
+void alocarVeiculos(Caminho *caminhos, Vetor *veiculos);
 
 #endif //TPA_FULKERSON_FULKERSON_H

@@ -10,7 +10,7 @@
 typedef struct ___caminho {
     int tamanho;
     int preenchido;
-    double fluxoMaximo;
+    int fluxoMaximo;
     Grafo **registros;
 } Caminho;
 
