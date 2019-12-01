@@ -9,6 +9,7 @@ CMakeFiles/tpa_fulkerson.dir/src/arquivo.c.obj
  C:/Users/guzuc/CLionProjects/tpa-fulkerson/src/arquivo.c
  C:/Users/guzuc/CLionProjects/tpa-fulkerson/src/headers/aresta.h
  C:/Users/guzuc/CLionProjects/tpa-fulkerson/src/headers/arquivo.h
+ C:/Users/guzuc/CLionProjects/tpa-fulkerson/src/headers/caminho.h
  C:/Users/guzuc/CLionProjects/tpa-fulkerson/src/headers/grafo.h
  C:/Users/guzuc/CLionProjects/tpa-fulkerson/src/headers/veiculo.h
  C:/Users/guzuc/CLionProjects/tpa-fulkerson/src/headers/vetor.h
@@ -45,6 +46,9 @@ CMakeFiles/tpa_fulkerson.dir/src/veiculo.c.obj
  C:/Users/guzuc/CLionProjects/tpa-fulkerson/src/headers/veiculo.h
  C:/Users/guzuc/CLionProjects/tpa-fulkerson/src/veiculo.c
 CMakeFiles/tpa_fulkerson.dir/src/vetor.c.obj
+ C:/Users/guzuc/CLionProjects/tpa-fulkerson/src/headers/aresta.h
+ C:/Users/guzuc/CLionProjects/tpa-fulkerson/src/headers/caminho.h
+ C:/Users/guzuc/CLionProjects/tpa-fulkerson/src/headers/grafo.h
  C:/Users/guzuc/CLionProjects/tpa-fulkerson/src/headers/veiculo.h
  C:/Users/guzuc/CLionProjects/tpa-fulkerson/src/headers/vetor.h
  C:/Users/guzuc/CLionProjects/tpa-fulkerson/src/vetor.c

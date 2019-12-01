@@ -14,8 +14,10 @@ int main() {
     Vetor *veiculos = preencherVeiculos(arquivoVeiculos);
     Caminho *caminhos = fordFulkerson(grafo, "A", "J");
     alocarVeiculos(caminhos, veiculos);
-    mostrarVeiculos(veiculos);
     mostrarCaminho(caminhos);
+    mostrarNaoAlocados(veiculos);
+    mostrarCargaPendente(grafo);
+    printf("%d\n", veiculosInsuficientes(caminhos, veiculos));
 
     return 0;
 }

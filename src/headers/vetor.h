@@ -6,6 +6,7 @@
 #define TPA_FULKERSON_VETOR_H
 
 #include "veiculo.h"
+#include "caminho.h"
 
 typedef struct ___vetor {
     int tamanho;
@@ -18,5 +19,9 @@ Vetor *criaVetor();
 void inserirVetor(Vetor *vetor, Veiculo *novoRegistro);
 
 void mostrarVeiculos(Vetor *veiculos);
+
+void mostrarNaoAlocados(Vetor *veiculos);
+
+bool veiculosInsuficientes(Caminho *caminhos, Vetor *veiculos);
 
 #endif //TPA_FULKERSON_VETOR_H

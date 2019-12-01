@@ -18,7 +18,6 @@ void expandeCaminho(Caminho *caminho) {
     caminho->tamanho = caminho->tamanho + 1;
 }
 
-
 Caminho *criaCaminho() {
     int tamanho = 1;
     Caminho *novoCaminho = calloc(1, sizeof(Caminho));

@@ -35,7 +35,27 @@ void inserirVetor(Vetor *vetor, Veiculo *novoRegistro) {
 
 void mostrarVeiculos(Vetor *veiculos) {
     for (int i = 0; i < veiculos->preenchido; ++i) {
-        printf("P:%s C:%d A:%d\n", veiculos->registros[i]->placa, veiculos->registros[i]->capacidade,
+        printf("Placa:%s Capacidade:%d Alocado:%d\n", veiculos->registros[i]->placa, veiculos->registros[i]->capacidade,
                veiculos->registros[i]->alocado);
     }
+}
+
+void mostrarNaoAlocados(Vetor *veiculos) {
+    printf("\nOs seguintes veiculos nao foram alocados:\n");
+    for (int i = 0; i < veiculos->preenchido; ++i) {
+        if (!veiculos->registros[i]->alocado)
+            printf("Placa: %s Capacidade: %d\n",
+                   veiculos->registros[i]->placa,
+                   veiculos->registros[i]->capacidade);
+    }
+}
+
+bool veiculosInsuficientes(Caminho *caminhos, Vetor *veiculos) {
+    if (caminhos->preenchido > veiculos->preenchido)
+        return true;
+    for (int i = 0; i < caminhos->preenchido; ++i) {
+        if (caminhos->registros[i]->veiculoAlocado == NULL)
+            return true;
+    }
+    return false;
 }

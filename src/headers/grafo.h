@@ -24,4 +24,6 @@ void removerGrafo(Grafo *grafo);
 
 void mostrarGrafo(Grafo *grafo);
 
+void mostrarCargaPendente(Grafo *grafo);
+
 #endif //TPA_DIJKSTRA_VETOR_H

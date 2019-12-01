@@ -49,16 +49,40 @@ void removerGrafo(Grafo *grafo) {
     grafo->arestas[grafo->preenchido--] = NULL;
 }
 
+int ___calcularDistancia(Grafo *grafo) {
+    int distanciaTotal = 0;
+    for (int i = 0; i < grafo->preenchido; ++i) {
+        distanciaTotal += grafo->arestas[i]->distancia;
+    }
+    return distanciaTotal;
+}
+
 void mostrarGrafo(Grafo *grafo) {
     printf("\n");
     grafo->veiculoAlocado == NULL ?
-    printf("FM: %d\n", grafo->fluxoMaximo) :
-    printf("FM: %d VA: %s %d\n", grafo->fluxoMaximo, grafo->veiculoAlocado->placa, grafo->veiculoAlocado->capacidade);
+    printf("Fluxo Maximo: %d Distancia: %d\n", grafo->fluxoMaximo, ___calcularDistancia(grafo)) :
+    printf("Fluxo Maximo: %d Distancia: %d\nPlaca: %s Capacidade: %d\n",
+           grafo->fluxoMaximo,
+           ___calcularDistancia(grafo),
+           grafo->veiculoAlocado->placa,
+           grafo->veiculoAlocado->capacidade);
     for (int i = 0; i < grafo->preenchido; ++i) {
         printf("%s -> %s = D: %d F: %d\n", grafo->arestas[i]->origem,
                grafo->arestas[i]->destino,
                grafo->arestas[i]->distancia,
                grafo->arestas[i]->fluxoDisponivel);
+    }
+    printf("\n");
+}
+
+void mostrarCargaPendente(Grafo *grafo) {
+    printf("\nArestas com carga pendente:\n");
+    for (int i = 0; i < grafo->preenchido; ++i) {
+        if (grafo->arestas[i]->fluxoDisponivel > 0)
+            printf("%s -> %s = Carga: %d\n",
+                   grafo->arestas[i]->origem,
+                   grafo->arestas[i]->destino,
+                   grafo->arestas[i]->fluxoDisponivel);
     }
     printf("\n");
 }
