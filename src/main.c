@@ -13,13 +13,22 @@ int main() {
     FILE *arquivoDistancias = fopen("../distancias.txt", "r");
     FILE *arquivoFluxos = fopen("../fluxos.txt", "r");
     FILE *arquivoVeiculos = fopen("../veiculos.txt", "r");
+    char origem[100];
+    char destino[100];
+
+    printf("Entre com a origem:");
+    scanf("%s", origem);
+    printf("Entre com o destino:");
+    scanf("%s", destino);
+
     Grafo *grafo = preencherGrafo(arquivoDistancias, arquivoFluxos);
     Vetor *veiculos = preencherVeiculos(arquivoVeiculos);
-    Caminho *caminhos = fordFulkerson(veiculos, grafo, "A", "J");
+    Caminho *caminhos = fordFulkerson(veiculos, grafo, origem, destino);
     mostrarCaminho(caminhos);
     mostrarVeiculosNaoAlocados(veiculos);
     mostrarVeiculosInsuficientes(caminhos, veiculos);
     mostrarCargaPendente(grafo);
+    mostrarArestaNula(grafo, origem, destino);
 
     return 0;
 }

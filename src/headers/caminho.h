@@ -19,4 +19,6 @@ void inserirCaminho(Caminho *caminho, Grafo *novoRegistro);
 
 void mostrarCaminho(Caminho *caminho);
 
+void mostrarArestaNula(Grafo *grafo, char *origem, char *destino);
+
 #endif //TPA_FULKERSON_CAMINHO_H

@@ -6,6 +6,26 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/guzuc/CLionProjects/tpa-fulkerson/src/caminho.c
+stdlib.h
+-
+limits.h
+-
+string.h
+-
+headers/caminho.h
+C:/Users/guzuc/CLionProjects/tpa-fulkerson/src/headers/caminho.h
+headers/vetor.h
+C:/Users/guzuc/CLionProjects/tpa-fulkerson/src/headers/vetor.h
+
+C:/Users/guzuc/CLionProjects/tpa-fulkerson/src/grafo.c
+stdlib.h
+-
+string.h
+-
+headers/grafo.h
+C:/Users/guzuc/CLionProjects/tpa-fulkerson/src/headers/grafo.h
+
 C:/Users/guzuc/CLionProjects/tpa-fulkerson/src/headers/aresta.h
 
 C:/Users/guzuc/CLionProjects/tpa-fulkerson/src/headers/arquivo.h
@@ -15,8 +35,6 @@ stdio.h
 C:/Users/guzuc/CLionProjects/tpa-fulkerson/src/headers/caminho.h
 grafo.h
 C:/Users/guzuc/CLionProjects/tpa-fulkerson/src/headers/grafo.h
-
-C:/Users/guzuc/CLionProjects/tpa-fulkerson/src/headers/fulkerson.h
 
 C:/Users/guzuc/CLionProjects/tpa-fulkerson/src/headers/grafo.h
 arquivo.h
@@ -37,18 +55,4 @@ caminho.h
 C:/Users/guzuc/CLionProjects/tpa-fulkerson/src/headers/caminho.h
 arquivo.h
 C:/Users/guzuc/CLionProjects/tpa-fulkerson/src/headers/arquivo.h
-
-C:/Users/guzuc/CLionProjects/tpa-fulkerson/src/main.c
-stdio.h
--
-stdlib.h
--
-string.h
--
-headers/grafo.h
-C:/Users/guzuc/CLionProjects/tpa-fulkerson/src/headers/grafo.h
-headers/vetor.h
-C:/Users/guzuc/CLionProjects/tpa-fulkerson/src/headers/vetor.h
-headers/fulkerson.h
-C:/Users/guzuc/CLionProjects/tpa-fulkerson/src/headers/fulkerson.h
 

@@ -119,7 +119,7 @@ void mostrarGrafo(Grafo *grafo) {
 }
 
 void mostrarCargaPendente(Grafo *grafo) {
-    printf("\nArestas com carga pendente:\n");
+    printf("\nCentros com carga pendente:\n");
     for (int i = 0; i < grafo->preenchido; ++i) {
         if (grafo->arestas[i]->fluxoDisponivel > 0)
             mostrarAresta(grafo->arestas[i]);
