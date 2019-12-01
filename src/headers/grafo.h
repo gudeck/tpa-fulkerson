@@ -4,7 +4,7 @@
 #ifndef TPA_DIJKSTRA_VETOR_H
 #define TPA_DIJKSTRA_VETOR_H
 
-#include <stdbool.h>
+#include "arquivo.h"
 #include "aresta.h"
 #include "veiculo.h"
 
@@ -25,5 +25,7 @@ void removerGrafo(Grafo *grafo);
 void mostrarGrafo(Grafo *grafo);
 
 void mostrarCargaPendente(Grafo *grafo);
+
+Grafo *preencherGrafo(FILE *arquivoDistancias, FILE *arquivoFluxos);
 
 #endif //TPA_DIJKSTRA_VETOR_H

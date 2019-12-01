@@ -1,10 +1,34 @@
 //
-// Created by 2017122760013 on 28/11/2019.
+// Created by guzuc on 01/12/2019.
 //
 
-#include <string.h>
 #include <limits.h>
+#include <string.h>
+#include "headers/vetor.h"
 #include "headers/fulkerson.h"
+
+Veiculo *___buscarVeiculo(Vetor *veiculos, int fluxoGrafo) {
+    Veiculo *veiculoIdeal = criaVeiculo("A", "2147483647");
+    for (int i = 0; i < veiculos->preenchido; ++i) {
+        if (!veiculos->registros[i]->alocado) {
+            if (veiculos->registros[i]->capacidade >= fluxoGrafo &&
+                veiculos->registros[i]->capacidade < veiculoIdeal->capacidade) {
+                veiculoIdeal = veiculos->registros[i];
+            }
+        }
+    }
+    if (veiculoIdeal->capacidade != -1)
+        veiculoIdeal->alocado = true;
+    else
+        veiculoIdeal = NULL;
+    return veiculoIdeal;
+}
+
+void ___alocarVeiculos(Caminho *caminhos, Vetor *veiculos) {
+    for (int i = 0; i < caminhos->preenchido; ++i) {
+        caminhos->registros[i]->veiculoAlocado = ___buscarVeiculo(veiculos, caminhos->registros[i]->fluxoMaximo);
+    }
+}
 
 int ___encontrarMenorCapacidade(Grafo *grafo) {
     int menor = INT_MAX;
@@ -42,7 +66,7 @@ Grafo *___percorreGrafo(Grafo *grafoOriginal, Grafo *grafoResposta, char *origem
     return NULL;
 }
 
-Caminho *fordFulkerson(Grafo *grafo, char *origem, char *destino) {
+Caminho *fordFulkerson(Vetor *veiculos, Grafo *grafo, char *origem, char *destino) {
     Caminho *caminhosPossiveis = criaCaminho();
     Grafo *grafoResposta = criaGrafo();
     while ((grafoResposta = ___percorreGrafo(grafo, grafoResposta, origem, destino)) != NULL) {
@@ -50,28 +74,6 @@ Caminho *fordFulkerson(Grafo *grafo, char *origem, char *destino) {
         inserirCaminho(caminhosPossiveis, grafoResposta);
         grafoResposta = criaGrafo();
     }
+    ___alocarVeiculos(caminhosPossiveis, veiculos);
     return caminhosPossiveis;
-}
-
-Veiculo *___buscarVeiculo(Vetor *veiculos, int fluxoGrafo) {
-    Veiculo *veiculoIdeal = criaVeiculo("A", "2147483647");
-    for (int i = 0; i < veiculos->preenchido; ++i) {
-        if (!veiculos->registros[i]->alocado) {
-            if (veiculos->registros[i]->capacidade >= fluxoGrafo &&
-                veiculos->registros[i]->capacidade < veiculoIdeal->capacidade) {
-                veiculoIdeal = veiculos->registros[i];
-            }
-        }
-    }
-    if (veiculoIdeal->capacidade != -1)
-        veiculoIdeal->alocado = true;
-    else
-        veiculoIdeal = NULL;
-    return veiculoIdeal;
-}
-
-void alocarVeiculos(Caminho *caminhos, Vetor *veiculos) {
-    for (int i = 0; i < caminhos->preenchido; ++i) {
-        caminhos->registros[i]->veiculoAlocado = ___buscarVeiculo(veiculos, caminhos->registros[i]->fluxoMaximo);
-    }
 }

@@ -1,7 +1,6 @@
 //
 // Created by guzuc on 28/11/2019.
 //
-
 #ifndef TPA_FULKERSON_VEICULO_H
 #define TPA_FULKERSON_VEICULO_H
 
@@ -14,5 +13,7 @@ typedef struct ___veiculo {
 } Veiculo;
 
 Veiculo *criaVeiculo(char *placa, char *capacidade);
+
+void mostrarVeiculo(Veiculo *veiculo);
 
 #endif //TPA_FULKERSON_VEICULO_H

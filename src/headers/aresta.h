@@ -3,9 +3,6 @@
 //
 #ifndef TPA_DIJKSTRA_ARESTA_H
 #define TPA_DIJKSTRA_ARESTA_H
-
-#include <stdbool.h>
-
 typedef struct ___aresta {
     char *origem;
     char *destino;
@@ -14,5 +11,7 @@ typedef struct ___aresta {
 } Aresta;
 
 Aresta *criaAresta(char *origem, char *destino, char *distancia, char *fluxoDisponivel);
+
+void mostrarAresta(Aresta *aresta);
 
 #endif //TPA_DIJKSTRA_ARESTA_H

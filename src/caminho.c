@@ -3,13 +3,16 @@
 //
 
 #include <stdlib.h>
+#include <limits.h>
+#include <string.h>
 #include "headers/caminho.h"
+#include "headers/vetor.h"
 
-bool precisaExpandirCaminho(Caminho *caminho) {
+bool ___precisaExpandirCaminho(Caminho *caminho) {
     return (caminho->tamanho - caminho->preenchido) == 0;
 }
 
-void expandeCaminho(Caminho *caminho) {
+void ___expandeCaminho(Caminho *caminho) {
     Grafo **novoArray = calloc(caminho->tamanho + 1, sizeof(Grafo *));
     for (int i = 0; i < caminho->preenchido; ++i) {
         novoArray[i] = caminho->registros[i];
@@ -27,7 +30,7 @@ Caminho *criaCaminho() {
 }
 
 void inserirCaminho(Caminho *caminho, Grafo *novoRegistro) {
-    if (precisaExpandirCaminho(caminho)) expandeCaminho(caminho);
+    if (___precisaExpandirCaminho(caminho)) ___expandeCaminho(caminho);
     caminho->registros[caminho->preenchido++] = novoRegistro;
     caminho->fluxoMaximo += novoRegistro->fluxoMaximo;
 }

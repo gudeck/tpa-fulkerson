@@ -1,9 +1,12 @@
 //
 // Created by guzuc on 09/11/2019.
 //
+
+#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "headers/arquivo.h"
+#include "headers/grafo.h"
+#include "headers/vetor.h"
 #include "headers/fulkerson.h"
 
 int main() {
@@ -12,12 +15,11 @@ int main() {
     FILE *arquivoVeiculos = fopen("../veiculos.txt", "r");
     Grafo *grafo = preencherGrafo(arquivoDistancias, arquivoFluxos);
     Vetor *veiculos = preencherVeiculos(arquivoVeiculos);
-    Caminho *caminhos = fordFulkerson(grafo, "A", "J");
-    alocarVeiculos(caminhos, veiculos);
+    Caminho *caminhos = fordFulkerson(veiculos, grafo, "A", "J");
     mostrarCaminho(caminhos);
-    mostrarNaoAlocados(veiculos);
+    mostrarVeiculosNaoAlocados(veiculos);
+    mostrarVeiculosInsuficientes(caminhos, veiculos);
     mostrarCargaPendente(grafo);
-    printf("%d\n", veiculosInsuficientes(caminhos, veiculos));
 
     return 0;
 }

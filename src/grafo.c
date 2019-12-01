@@ -1,10 +1,89 @@
 //
 // Created by guzuc on 09/11/2019.
 //
-#include <stdbool.h>
 #include <stdlib.h>
-#include <stdio.h>
+#include <string.h>
 #include "headers/grafo.h"
+
+Grafo *___preencherVertices(FILE *arquivo) {
+    Grafo *novoGrafo = criaGrafo();
+    char linha[999];
+    char *nome;
+    fgets(linha, 999, arquivo);
+    nome = strtok(linha, ";");
+    inserirGrafo(novoGrafo, criaAresta(nome, nome, 0, 0));
+    for (int i = 1; (nome = strtok(NULL, ";")); i++) {
+        inserirGrafo(novoGrafo, criaAresta(nome, nome, 0, 0));
+    }
+    return novoGrafo;
+}
+
+Grafo *___preencherDistancias(FILE *arquivo) {
+    char linha[999];
+    char *distancia;
+    char *origem;
+    char *destino;
+    Grafo *grafoBairros = ___preencherVertices(arquivo);
+    Grafo *novoGrafo = criaGrafo();
+    for (int i = 0; fgets(linha, 999, arquivo); i++) {
+        strtok(linha, ";");
+        origem = grafoBairros->arestas[i]->origem;
+        for (int j = 0; (distancia = strtok(NULL, ";")); j++) {
+            if (strcmp(distancia, "0") == 0 || strcmp(distancia, "0\n") == 0) continue;
+            destino = grafoBairros->arestas[j]->destino;
+            inserirGrafo(novoGrafo, criaAresta(origem, destino, distancia, "0"));
+        }
+    }
+    return novoGrafo;
+}
+
+Grafo *___preencherFluxos(FILE *arquivoDistancias, FILE *arquivoFluxos) {
+    char linha[999];
+    char *fluxo;
+    Grafo *grafoDistancias = ___preencherDistancias(arquivoDistancias);
+    fgets(linha, 999, arquivoFluxos);
+    for (int i = 0, indice = 0; fgets(linha, 999, arquivoFluxos); i++) {
+        strtok(linha, ";");
+        for (int j = 0; (fluxo = strtok(NULL, ";")); j++) {
+            if (strcmp(fluxo, "0") == 0 || strcmp(fluxo, "0\n") == 0) continue;
+            grafoDistancias->arestas[indice++]->fluxoDisponivel = strtol(fluxo, NULL, 10);
+        }
+    }
+    return grafoDistancias;
+}
+
+int ___calcularDistancia(Grafo *grafo) {
+    int distanciaTotal = 0;
+    for (int i = 0; i < grafo->preenchido; ++i) {
+        distanciaTotal += grafo->arestas[i]->distancia;
+    }
+    return distanciaTotal;
+}
+
+bool ___precisaEncolherGrafo(Grafo *grafo) {
+    return (grafo->tamanho - grafo->preenchido) > 0;
+}
+
+void ___encolheGrafo(Grafo *grafo) {
+    Aresta **novoArray = calloc(--grafo->tamanho, sizeof(Aresta *));
+    for (int i = 0; i < grafo->preenchido; ++i) {
+        novoArray[i] = grafo->arestas[i];
+    }
+    grafo->arestas = novoArray;
+}
+
+bool ___precisaExpandirGrafo(Grafo *grafo) {
+    return (grafo->tamanho - grafo->preenchido) == 0;
+}
+
+void ___expandeGrafo(Grafo *grafo) {
+    Aresta **novoArray = calloc(grafo->tamanho + 1, sizeof(Aresta *));
+    for (int i = 0; i < grafo->preenchido; ++i) {
+        novoArray[i] = grafo->arestas[i];
+    }
+    grafo->arestas = novoArray;
+    grafo->tamanho = grafo->tamanho + 1;
+}
 
 Grafo *criaGrafo() {
     int tamanho = 1;
@@ -14,47 +93,14 @@ Grafo *criaGrafo() {
     return novoVetor;
 }
 
-bool precisaExpandirGrafo(Grafo *grafo) {
-    return (grafo->tamanho - grafo->preenchido) == 0;
-}
-
-void expandeGrafo(Grafo *grafo) {
-    Aresta **novoArray = calloc(grafo->tamanho + 1, sizeof(Aresta *));
-    for (int i = 0; i < grafo->preenchido; ++i) {
-        novoArray[i] = grafo->arestas[i];
-    }
-    grafo->arestas = novoArray;
-    grafo->tamanho = grafo->tamanho + 1;
-}
-
 void inserirGrafo(Grafo *grafo, Aresta *novaAresta) {
-    if (precisaExpandirGrafo(grafo)) expandeGrafo(grafo);
+    if (___precisaExpandirGrafo(grafo)) ___expandeGrafo(grafo);
     grafo->arestas[grafo->preenchido++] = novaAresta;
 }
 
-bool precisaEncolherGrafo(Grafo *grafo) {
-    return (grafo->tamanho - grafo->preenchido) > 0;
-}
-
-void encolheGrafo(Grafo *grafo) {
-    Aresta **novoArray = calloc(--grafo->tamanho, sizeof(Aresta *));
-    for (int i = 0; i < grafo->preenchido; ++i) {
-        novoArray[i] = grafo->arestas[i];
-    }
-    grafo->arestas = novoArray;
-}
-
 void removerGrafo(Grafo *grafo) {
-    if (precisaEncolherGrafo(grafo))encolheGrafo(grafo);
+    if (___precisaEncolherGrafo(grafo))___encolheGrafo(grafo);
     grafo->arestas[grafo->preenchido--] = NULL;
-}
-
-int ___calcularDistancia(Grafo *grafo) {
-    int distanciaTotal = 0;
-    for (int i = 0; i < grafo->preenchido; ++i) {
-        distanciaTotal += grafo->arestas[i]->distancia;
-    }
-    return distanciaTotal;
 }
 
 void mostrarGrafo(Grafo *grafo) {
@@ -67,10 +113,7 @@ void mostrarGrafo(Grafo *grafo) {
            grafo->veiculoAlocado->placa,
            grafo->veiculoAlocado->capacidade);
     for (int i = 0; i < grafo->preenchido; ++i) {
-        printf("%s -> %s = D: %d F: %d\n", grafo->arestas[i]->origem,
-               grafo->arestas[i]->destino,
-               grafo->arestas[i]->distancia,
-               grafo->arestas[i]->fluxoDisponivel);
+        mostrarAresta(grafo->arestas[i]);
     }
     printf("\n");
 }
@@ -79,10 +122,13 @@ void mostrarCargaPendente(Grafo *grafo) {
     printf("\nArestas com carga pendente:\n");
     for (int i = 0; i < grafo->preenchido; ++i) {
         if (grafo->arestas[i]->fluxoDisponivel > 0)
-            printf("%s -> %s = Carga: %d\n",
-                   grafo->arestas[i]->origem,
-                   grafo->arestas[i]->destino,
-                   grafo->arestas[i]->fluxoDisponivel);
+            mostrarAresta(grafo->arestas[i]);
     }
     printf("\n");
+}
+
+Grafo *preencherGrafo(FILE *arquivoDistancias, FILE *arquivoFluxos) {
+    verificaArquivo(arquivoDistancias);
+    verificaArquivo(arquivoFluxos);
+    return ___preencherFluxos(arquivoDistancias, arquivoFluxos);
 }
