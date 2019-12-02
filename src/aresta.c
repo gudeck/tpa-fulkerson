@@ -15,8 +15,14 @@ Aresta *criaAresta(char *origem, char *destino, char *distancia, char *fluxoDisp
     return novaAresta;
 }
 
-void mostrarAresta(Aresta *aresta) {
+void mostrarArestaCompleta(Aresta *aresta) {
     printf("%s -> %s, Distancia: %d, Fluxo Disponivel: %d\n",
            aresta->origem, aresta->destino,
            aresta->distancia, aresta->fluxoDisponivel);
+}
+
+void mostrarArestaSimplificada(Aresta *aresta) {
+    printf("%s -> %s, Distancia: %d\n",
+           aresta->origem, aresta->destino,
+           aresta->distancia);
 }

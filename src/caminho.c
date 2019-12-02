@@ -66,7 +66,7 @@ void mostrarCaminho(Caminho *caminho) {
     for (int i = 0; i < caminho->preenchido; ++i) {
         grafoAuxiliar = caminho->registros[i];
         fluxoMaximoTotal += grafoAuxiliar->fluxoMaximo;
-        mostrarGrafo(grafoAuxiliar);
+        mostrarGrafo(grafoAuxiliar, SIMPLIFICADO);
     }
     printf("\nFluxo Maximo Total: %d\n\n", fluxoMaximoTotal);
 }
@@ -86,7 +86,7 @@ void mostrarArestaNula(Grafo *grafo, char *origem, char *destino) {
                 quantidadeZeros++;
         }
         if (quantidadeZeros == 1)
-            mostrarGrafo(grafoAuxiliar);
+            mostrarGrafo(grafoAuxiliar, COMPLETO);
     }
     printf("\n");
 }

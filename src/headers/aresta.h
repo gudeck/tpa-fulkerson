@@ -12,6 +12,8 @@ typedef struct ___aresta {
 
 Aresta *criaAresta(char *origem, char *destino, char *distancia, char *fluxoDisponivel);
 
-void mostrarAresta(Aresta *aresta);
+void mostrarArestaCompleta(Aresta *aresta);
+
+void mostrarArestaSimplificada(Aresta *aresta);
 
 #endif //TPA_DIJKSTRA_ARESTA_H

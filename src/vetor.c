@@ -33,12 +33,14 @@ Vetor *___preencherVeiculos(FILE *arquivo) {
     Vetor *novoVetor = criaVetor();
     char linha[999];
     char *placa;
+    char *nomeMotorista;
     char *capacidade;
     fgets(linha, 999, arquivo);
     for (int i = 0; fgets(linha, 999, arquivo); i++) {
         placa = strtok(linha, ";");
+        nomeMotorista = strtok(NULL, ";");
         capacidade = strtok(NULL, "\n");
-        inserirVetor(novoVetor, criaVeiculo(placa, capacidade));
+        inserirVetor(novoVetor, criaVeiculo(placa, nomeMotorista, capacidade));
     }
     return novoVetor;
 }

@@ -8,6 +8,9 @@
 #include "aresta.h"
 #include "veiculo.h"
 
+#define SIMPLIFICADO 1
+#define COMPLETO 2
+
 typedef struct ___grafo {
     int tamanho;
     int preenchido;
@@ -22,7 +25,7 @@ void inserirGrafo(Grafo *grafo, Aresta *novaAresta);
 
 void removerGrafo(Grafo *grafo);
 
-void mostrarGrafo(Grafo *grafo);
+void mostrarGrafo(Grafo *grafo, int modo);
 
 void mostrarCargaPendente(Grafo *grafo);
 

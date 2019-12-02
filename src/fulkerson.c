@@ -8,7 +8,7 @@
 #include "headers/fulkerson.h"
 
 Veiculo *___buscarVeiculo(Vetor *veiculos, int fluxoGrafo) {
-    Veiculo *veiculoIdeal = criaVeiculo("A", "2147483647");
+    Veiculo *veiculoIdeal = criaVeiculo("A", "A", "2147483647");
     for (int i = 0; i < veiculos->preenchido; ++i) {
         if (!veiculos->registros[i]->alocado) {
             if (veiculos->registros[i]->capacidade >= fluxoGrafo &&

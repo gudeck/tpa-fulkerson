@@ -8,11 +8,12 @@
 
 typedef struct ___veiculo {
     char *placa;
+    char *nomeMotorista;
     int capacidade;
     bool alocado;
 } Veiculo;
 
-Veiculo *criaVeiculo(char *placa, char *capacidade);
+Veiculo *criaVeiculo(char *placa, char *nomeMotorista, char *capacidade);
 
 void mostrarVeiculo(Veiculo *veiculo);
 
