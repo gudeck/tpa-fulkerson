@@ -17,7 +17,7 @@ Veiculo *___buscarVeiculo(Vetor *veiculos, int fluxoGrafo) {
             }
         }
     }
-    if (veiculoIdeal->capacidade != -1)
+    if (veiculoIdeal->capacidade != 2147483647)
         veiculoIdeal->alocado = true;
     else
         veiculoIdeal = NULL;
